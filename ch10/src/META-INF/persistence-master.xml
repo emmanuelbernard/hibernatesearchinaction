@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+             version="1.0">
+	<!-- example of a default persistence.xml -->
+	<persistence-unit name="dvdstore-catalog">
+		<jta-data-source>java:/DefaultDS</jta-data-source>
+		<properties>
+			<!-- regular Hibernate Core configuration -->
+			<property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+			<property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
+			<property name="hibernate.connection.url" value="jdbc:h2:mem:"/>
+			<property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+    		<property name="hibernate.connection.pool_size" value="1"/>		
+			
+			<!-- Hibernate Search configuration -->
+    		<property name="hibernate.search.default.directory_provider"
+    					value="org.hibernate.search.store.FSDirectoryProvider"/>
+    		<!--  property name="hibernate.search.default.indexBase" value="/Applications/jboss-5.0.0.CR1.master/server/default/data/indexes"/ -->
+    		<property name="hibernate.search.default.indexBase" value="../server/default/data/indexes"/>
+    		<property name="hibernate.search.default.refresh" value="1800"/>
+    		
+    	</properties>
+	</persistence-unit>
+</persistence>

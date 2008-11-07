@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/common/lib/antlr.jar"/>
+	<classpathentry kind="lib" path="/common/lib/apache-solr-analyzer.jar"/>
+	<classpathentry kind="lib" path="/common/lib/asm.jar"/>
+	<classpathentry kind="lib" path="/common/lib/asm-attrs.jar"/>
+	<classpathentry kind="lib" path="/common/lib/cglib.jar"/>
+	<classpathentry kind="lib" path="/common/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="/common/lib/dom4j.jar"/>
+	<classpathentry kind="lib" path="/common/lib/easymock.jar"/>
+	<classpathentry kind="lib" path="/common/lib/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="/common/lib/h2.jar"/>
+	<classpathentry kind="lib" path="/common/lib/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="/common/lib/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="/common/lib/hibernate-core.jar"/>
+	<classpathentry kind="lib" path="/common/lib/hibernate-entitymanager.jar"/>
+	<classpathentry kind="lib" path="/common/lib/hibernate-search.jar"/>
+	<classpathentry kind="lib" path="/common/lib/hibernate-validator.jar"/>
+	<classpathentry kind="lib" path="/common/lib/javassist.jar"/>
+	<classpathentry kind="lib" path="/common/lib/jms.jar"/>
+	<classpathentry kind="lib" path="/common/lib/jsr250-api.jar"/>
+	<classpathentry kind="lib" path="/common/lib/jta.jar"/>
+	<classpathentry kind="lib" path="/common/lib/log4j.jar"/>
+	<classpathentry kind="lib" path="/common/lib/lucene-core.jar"/>
+	<classpathentry kind="lib" path="/common/lib/lucene-snowball.jar"/>
+	<classpathentry kind="lib" path="/common/lib/slf4j-api.jar"/>
+	<classpathentry kind="lib" path="/common/lib/slf4j-log4j12.jar"/>
+	<classpathentry kind="lib" path="/common/lib/testng-5.7-jdk15.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

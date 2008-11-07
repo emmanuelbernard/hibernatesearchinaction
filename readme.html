@@ -1,0 +1,40 @@
+<html>
+<head><title>Hibernate Search in Action - companion code</title></head>
+<body>
+<h1>Hibernate Search in Action - companion code</h1>
+<p>This document explains how to use the companion code of Hibernate Search in Action</p>
+
+<p>This description is relevant for chapter 2 to 6 and 8 to 10</p>
+<h2>Project structure</h2>
+<h3>src</h3>
+<p>Contains the example codes.</p>
+<h3>test</h3>
+<p>Contains the test framework. Several tests are making sure the examples runs. The test framework uses TestNG.</p>
+<h3>Dependencies</h3>
+<p>You can find the libraries necessary to compile and run the tests in common/lib</p>
+<h3>Build</h3>
+<p>Each project contains an Ant based build system. The following tasks are available:
+<ul>
+<li>clean: clean resources</li>
+<li>compile: compile the source code</li>
+<li>test: run the TestNG tests. Results can be found in build/reports.</li>
+</ul></p>
+<p>This build has been tested with Ant 1.7 and JDK 1.5</p>
+<h3>Eclipse users</h3>
+<p>You can import each project in your workspace. Open a workspace pointing to the root directory. File -> import -> General -> Existing Projects into Workspace. Select the root directory as the code root directory (directory containing this file). Import all projects (including common).</p>
+<p>This has been tested on Eclipse Europa. Using the TestNG plugin allows you to run TestNG tests from your IDE.</p>
+<h3>IntelliJ users</h3>
+<p>Open HSiA-DVDStore.ipr thout you can found in the root directory. Make sure that in preferences -> compiler the following resource patterns are present
+?*.properties;?*.xml;?*.dtd;?*.txt;?*.sql . It should. Enjoy.</p>
+<p>This procedure has been tested on IntelliJ 7.0.4. Using the TestNG plugin allows you to run TestNG tests from your IDE.</p>
+<h3>Projects</h3>
+<p><a href="ch02/readme.html">ch02</a><br/>
+<p><a href="ch03/readme.html">ch03</a><br/>
+<p><a href="ch04/readme.html">ch04</a><br/>
+<p><a href="ch05/readme.html">ch05</a><br/>
+<p><a href="ch06/readme.html">ch06</a><br/>
+<p><a href="ch08/readme.html">ch08</a><br/>
+<p><a href="ch09/readme.html">ch09</a><br/>
+<p><a href="ch10/readme.html">ch10</a><br/>
+</body></html>
+

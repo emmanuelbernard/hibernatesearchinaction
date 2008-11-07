@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<!--  Example 2.4 -->
+<hibernate-configuration>
+  <session-factory>
+  	<!--  database configuration -->
+    <property name="hibernate.connection.driver_class">org.h2.Driver</property>
+    <property name="hibernate.connection.url">jdbc:h2:mem:</property>
+    <property name="hibernate.connection.pool_size">1</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.H2Dialect</property>
+    
+    <!-- generate schema -->
+    <property name="hibernate.hbm2ddl.auto">create-drop</property>
+    
+    <!-- Hibernate Search configuration -->
+    <property name="hibernate.search.default.indexBase">./build/indexes</property>
+    
+    <!-- classes mapping -->
+    <mapping class="com.manning.hsia.dvdstore.model.Item"/>
+    
+    <!-- Manually set Hibernate Search event listeners -->
+    <event type="post-update">
+    	<listener
+    		class="org.hibernate.search.event.FullTextIndexEventListener" />
+    </event>
+    <event type="post-insert">
+    	<listener
+    		class="org.hibernate.search.event.FullTextIndexEventListener" />
+    </event>
+    <event type="post-delete">
+    	<listener
+    		class="org.hibernate.search.event.FullTextIndexEventListener" />
+    </event>
+    <event type="post-collection-recreate">
+    	<listener
+    		class="org.hibernate.search.event.FullTextIndexEventListener" />
+    </event>
+    <event type="post-collection-remove">
+    	<listener
+    		class="org.hibernate.search.event.FullTextIndexEventListener" />
+    </event>
+    <event type="post-collection-update">
+    	<listener
+    		class="org.hibernate.search.event.FullTextIndexEventListener" />
+    </event>
+
+  </session-factory>
+</hibernate-configuration>

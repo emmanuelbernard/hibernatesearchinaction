@@ -1,0 +1,20 @@
+<html>
+<head><title>Chapter 9 - Hibernate Search in Action</title></head>
+<body>
+<h1>Chapter 9 - Hibernate Search in Action</h1>
+<p>This chapter describe how to optimize Hibernate Search.</p>
+
+<h2>Project structure</h2>
+<h3>src</h3>
+<!--  talk about SessionInvoke thing -->
+<p>Contains the example codes. The action package contains the examples using Hibernate Core APIs. The util package contains various implementation including the sharding strategies and the filter caching strategy</p>
+<p>IndexingAction focuses on test around efficient indexing and optimization. SearchingAction focuses on efficient query execution.</p>
+<p>hibernate-test.cfg.xml and hibernate.cfg.xml show the differences between the test configuration and the production configuration in an in-memory approach</p>
+<h3>test</h3>
+<p>Contains the test framework. Several tests are making sure the examples runs. The test framework uses TestNG.</p>
+<p>Each test case make use of a data set contained in /import.sql. This data set is a sample of a realistic online catalog.</p>
+<p>Each test use a proxy based session/entitymanager initialization and transaction opening/closing. Each test runs inside a transaction just like it would in a container. SessionHolder and EntityManagerHolder keep the FullTextSession and FullTextEntityManager in a thread local for consumption by the services.</p>
+<p>In addition to the regular tests, Hibernate SearchUnitTest shows how to use EasyMock to test Hibernate Search applications and Hibernate SearchIntegrationTest shows how to write integration tests running in-memory.</p>
+<h3>Dependencies</h3>
+<p>You can find the libraries necessary to compile and run the tests in ../common/lib</p>
+</body></html>
