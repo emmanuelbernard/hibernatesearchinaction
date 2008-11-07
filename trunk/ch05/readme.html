@@ -1,0 +1,17 @@
+<html>
+<head><title>Chapter 5 - Hibernate Search in Action</title></head>
+<body>
+<h1>Chapter 5 - Hibernate Search in Action</h1>
+<p>This chapter covers directory providers, analyzer definitions and indexing.</p>
+
+<h2>Project structure</h2>
+<h3>src</h3>
+<p>Contains the example codes. The package model contains the domain model and demonstrate the use of analyzers. action shows analyzers in action and how to manually index your data</p>
+<p>Item hosts most of the analyzer definition examples and their usage on entities and fields. An example of stop word file is shown in com/manning/hsia/dvdstore/stopwords.txt. StemmerIndexerImpl tests the behavior of the stemmer analyzer and its influence on queries.</p>
+<p>Indexer in the action package demonstrates how to do manual indexing
+<h3>test</h3>
+<p>Contains the test framework. Several tests are making sure the examples runs. The test framework uses TestNG.</p>
+<p>Each test case make use of a data set contained in /import.sql. This data set is a sample of a realistic online catalog.</p>
+<h3>Dependencies</h3>
+<p>You can find the libraries necessary to compile and run the tests in ../common/lib</p>
+</body></html>

@@ -1,0 +1,92 @@
+<project name="hsia-ch10" basedir="."
+    xmlns:ivy="antlib:fr.jayasoft.ivy.ant">
+	
+    <property file="${basedir}/build.properties"/>
+    <property file="${user.home}/.ant.properties"/>
+
+	<property name="common.dir" value="../common"/>
+	<property name="ivy.dep.dir" value="${common.dir}/lib" />
+	<property name="build.dir" value="${basedir}/build"/>
+	<property name="classes.dir" value="${build.dir}/classes"/>
+	
+	<path id="compilation.classpath">
+		<fileset dir="${ivy.dep.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${basedir}/lib">
+			<include name="**/*.jar" />
+		</fileset>
+ 	</path>
+	
+	<target name="init">
+        <tstamp>
+            <format property="now" pattern="yyyyMMddhhmmss"/>
+        </tstamp>
+    </target>
+	
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+		<mkdir dir="${classes.dir}"/>
+	</target>
+
+	<target name="compile">
+		<javac destdir="${classes.dir}" debug="on">
+			<src path="${basedir}/src"/>
+			<classpath refid="compilation.classpath"/>
+		</javac>
+	</target>
+		
+	<target name="package" depends="clean, compile">
+		<copy todir="${classes.dir}">
+			<fileset dir="${basedir}/src">
+				<include name="**/*.sql"/>
+			</fileset>
+		</copy>
+		<copy file="${basedir}/src/META-INF/persistence-slave.xml" tofile="${classes.dir}/META-INF/persistence.xml"/>
+		<jar destfile="${build.dir}/dvdstore-slave.jar" >
+			<fileset dir="${classes.dir}">
+				<include name="**/*.*"/>
+				<exclude name="**/web/*.*"/>
+				<exclude name="**/master/*.*"/>
+			</fileset>
+		</jar>
+		<war destfile="${build.dir}/dvdstore-slave.war" webxml="${basedir}/etc/web.xml">
+			<classes dir="${classes.dir}" includes="**/web/*.*"/>
+		</war>
+		<zip destfile="${build.dir}/dvdstore-slave.ear">
+			<fileset dir="${build.dir}">
+				<include name="dvdstore-slave.jar"/>
+				<include name="*.war"/>
+			</fileset>
+			<fileset dir="${common.dir}">
+				<include name="lib/hibernate-searc*.jar"/>
+				<include name="lib/lucene*.jar"/>
+			</fileset>
+		</zip>
+		
+		<copy file="${basedir}/src/META-INF/persistence-master.xml" tofile="${classes.dir}/META-INF/persistence.xml" overwrite="true"/>
+		<jar destfile="${build.dir}/dvdstore-master.jar" >
+			<fileset dir="${classes.dir}">
+				<include name="**/*.*"/>
+				<exclude name="**/web/*.*"/>
+			</fileset>
+		</jar>
+		<zip destfile="${build.dir}/dvdstore-master.ear">
+			<fileset dir="${build.dir}">
+				<include name="dvdstore-master.jar"/>
+			</fileset>
+			<fileset dir="${common.dir}">
+				<include name="lib/hibernate-searc*.jar"/>
+				<include name="lib/lucene*.jar"/>
+			</fileset>
+		</zip>
+	</target>
+	
+	<target name="redeploy">
+		<delete file="${jboss.slave.deploy}/dvdstore-slave.ear"/>
+		<delete file="${jboss.master.deploy}/dvdstore-master.ear"/>
+		<antcall target="package"/>
+		<copy file="${build.dir}/dvdstore-slave.ear" todir="${jboss.slave.deploy}"/>
+		<copy file="${build.dir}/dvdstore-master.ear" todir="${jboss.master.deploy}"/>
+	</target>
+</project>

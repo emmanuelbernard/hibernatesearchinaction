@@ -1,0 +1,28 @@
+package com.manning.hsia.dvdstore.util;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.AnnotationConfiguration;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+
+public class JpaTestCase {
+
+	protected EntityManagerFactory factory;
+	
+	@BeforeTest(groups={"ch08"}, alwaysRun=true)
+	protected void setUp() throws Exception {
+		factory = Persistence.createEntityManagerFactory("dvdstore-catalog");
+		postSetUp();
+	}
+
+	@AfterTest(groups={"ch08"}, alwaysRun=true)
+	protected void tearDown() throws Exception {
+		factory.close();
+	}
+	
+	public void postSetUp() throws Exception {
+	}
+}
