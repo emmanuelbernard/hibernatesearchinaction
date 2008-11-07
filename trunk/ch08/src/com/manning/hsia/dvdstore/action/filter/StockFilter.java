@@ -23,7 +23,7 @@ public class StockFilter extends Filter {
 
 	@SuppressWarnings("unchecked") 
 	private final Map<IndexReader, BitSet> cache = 
-		new ReferenceMap(ReferenceMap.SOFT, ReferenceMap.HARD);  //keep dache in a SoftHashMap
+		new ReferenceMap(ReferenceMap.SOFT, ReferenceMap.HARD);  //keep cache in a SoftHashMap
 
 	@Override
 	public BitSet bits(IndexReader reader) throws IOException {

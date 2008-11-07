@@ -1,7 +1,6 @@
 package com.manning.hsia.dvdstore.action.filter;
 
 import org.apache.lucene.index.Term;
-import org.apache.lucene.search.CachingWrapperFilter;
 import org.apache.lucene.search.Filter;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.QueryWrapperFilter;
