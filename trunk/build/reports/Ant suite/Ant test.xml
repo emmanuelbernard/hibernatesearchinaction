@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Ant test" failures="0" tests="3" time="2.254" errors="0">
-  <properties/>
-  <testcase name="testIndexer" time="0.056" classname="com.manning.hsia.dvdstore.test.IndexerTest"/>
-  <testcase name="testIndexer" time="0.172" classname="com.manning.hsia.dvdstore.test.JpafIndexerTest"/>
-  <testcase name="testSearcher" time="0.069" classname="com.manning.hsia.dvdstore.test.SearchTest"/>
-</testsuite>
