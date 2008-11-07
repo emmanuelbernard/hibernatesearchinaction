@@ -23,7 +23,7 @@ public class EntityManagerInvocationHandler implements InvocationHandler {
 
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
-		FullTextEntityManager entityManager = Search.createFullTextEntityManager( factory.createEntityManager() );
+		FullTextEntityManager entityManager = Search.getFullTextEntityManager( factory.createEntityManager() );
 		EntityManagerHolder.setFullTextEntityManager(entityManager);
 		EntityTransaction tx = null;
 		Object result;
