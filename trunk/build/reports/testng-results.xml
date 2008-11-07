@@ -1,0 +1,39 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="Ant suite">
+    <groups>
+      <group name="ch02">
+        <method signature="com.manning.hsia.dvdstore.test.JpafIndexerTest.testIndexer()" name="testIndexer" class="com.manning.hsia.dvdstore.test.JpafIndexerTest"/>
+        <method signature="com.manning.hsia.dvdstore.test.IndexerTest.testIndexer()" name="testIndexer" class="com.manning.hsia.dvdstore.test.IndexerTest"/>
+        <method signature="com.manning.hsia.dvdstore.test.SearchTest.testSearcher()" name="testSearcher" class="com.manning.hsia.dvdstore.test.SearchTest"/>
+      </group>
+    </groups>
+    <test name="Ant test">
+      <class name="com.manning.hsia.dvdstore.test.SearchTest">
+        <test-method status="PASS" signature="testSearcher()" name="testSearcher" duration-ms="69" started-at="2008-09-11T01:08:39Z" finished-at="2008-09-11T01:08:39Z">
+        </test-method>
+      </class>
+      <class name="com.manning.hsia.dvdstore.test.IndexerTest">
+        <test-method status="PASS" signature="testIndexer()" name="testIndexer" duration-ms="56" started-at="2008-09-11T01:08:39Z" finished-at="2008-09-11T01:08:39Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="78" started-at="2008-09-11T01:08:39Z" finished-at="2008-09-11T01:08:39Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="7" started-at="2008-09-11T01:08:39Z" finished-at="2008-09-11T01:08:39Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDown()" name="tearDown" is-config="true" duration-ms="5" started-at="2008-09-11T01:08:39Z" finished-at="2008-09-11T01:08:39Z">
+        </test-method>
+      </class>
+      <class name="com.manning.hsia.dvdstore.test.JpafIndexerTest">
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="217" started-at="2008-09-11T01:08:38Z" finished-at="2008-09-11T01:08:39Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="107" started-at="2008-09-11T01:08:39Z" finished-at="2008-09-11T01:08:39Z">
+        </test-method>
+        <test-method status="PASS" signature="setUp()" name="setUp" is-config="true" duration-ms="1537" started-at="2008-09-11T01:08:37Z" finished-at="2008-09-11T01:08:38Z">
+        </test-method>
+        <test-method status="PASS" signature="testIndexer()" name="testIndexer" duration-ms="172" started-at="2008-09-11T01:08:39Z" finished-at="2008-09-11T01:08:39Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
