@@ -42,7 +42,7 @@ public class HibernateSearchUnitTest {
 		expect( query.setProjection("title") ).andReturn(query); //should call projection and return self
 		
 		List<Object[]> results = new ArrayList<Object[]>();  //build query results
-		results.add(new Object[] {"The incredibles"} );
+		results.add( new Object[] {"The incredibles"} );
 		expect( query.list() ).andReturn(results);  //associates it to query execution
 		
 		SessionHolder.setFullTextSession(session);  //pass mock objects to the service

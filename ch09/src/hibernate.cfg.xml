@@ -24,9 +24,9 @@
   <property name="hibernate.search.com.manning.hsia.dvdstore.model.Item.sharding_strategy.distributors.3">2</property>
   
   <!--  
-  <property name="hibernate..worker.execution">async</property>
-  <property name="hibernate.worker.thread_pool.size">2</property>
-  <property name="hibernate.worker.buffer_queue.max">100</property>
+  <property name="hibernate.search.worker.execution">async</property>
+  <property name="hibernate.search.worker.thread_pool.size">2</property>
+  <property name="hibernate.search.worker.buffer_queue.max">100</property>
   -->
   
   <mapping class="com.manning.hsia.dvdstore.model.Item"/>

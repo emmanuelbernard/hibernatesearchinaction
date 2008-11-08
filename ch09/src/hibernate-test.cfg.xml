@@ -11,11 +11,10 @@
   <property name="hibernate.connection.pool_size">1</property>
   
   <!--  regenerate DDL -->
-  <property name="hibernate.hbm2ddl.auto">create-drop</property>   <!-- generate schema very time -->
+  <property name="hibernate.hbm2ddl.auto">create-drop</property>   <!-- generate schema every time -->
   
   <!-- in-memory index -->
   <property name="hibernate.search.default.directory_provider">org.hibernate.search.store.RAMDirectoryProvider</property>
-      <!-- in-memory lucene directories -->
   
   <mapping class="com.manning.hsia.dvdstore.model.Item"/>
   <mapping class="com.manning.hsia.dvdstore.model.Distributor"/>
