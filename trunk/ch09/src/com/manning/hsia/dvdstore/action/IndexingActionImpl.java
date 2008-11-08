@@ -24,6 +24,7 @@ public class IndexingActionImpl implements IndexingAction {
 		FullTextSession session = SessionHolder.getFullTextSession();
 		
 		session.purgeAll(Item.class);  //remove obsolete content
+		session.flushToIndexes(); //apply purge now, before optimize
 		session.getSearchFactory().optimize(Item.class);  //physically clear space
 		
 		Criteria query = session.createCriteria(Item.class)
@@ -65,6 +66,7 @@ public class IndexingActionImpl implements IndexingAction {
 		FullTextSession session = SessionHolder.getFullTextSession();
 		
 		session.purgeAll(Item.class);
+		session.flushToIndexes();
 		session.getSearchFactory().optimize(Item.class); //run after purge to save space
 		
 		Criteria query = session.createCriteria(Item.class)

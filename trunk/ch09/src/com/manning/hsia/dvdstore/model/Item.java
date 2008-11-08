@@ -35,7 +35,7 @@ public class Item {
 	private Integer id;
 	
 	@Fields( 
-			{@Field(index=Index.TOKENIZED, store=Store.YES),
+			{@Field(index=Index.TOKENIZED, store=Store.YES), //stored to enable projection
 			@Field(name="title_sort", index=Index.UN_TOKENIZED)	
 			})
 	@Column(name="TITLE")
