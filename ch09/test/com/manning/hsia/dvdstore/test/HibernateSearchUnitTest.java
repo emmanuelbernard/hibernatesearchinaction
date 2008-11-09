@@ -27,33 +27,33 @@ public class HibernateSearchUnitTest {
 		
 		SearchingAction action = new SearchingActionImpl(); //create tested service
 		
-		FullTextQuery query = createMock(FullTextQuery.class);  //create mock for each object used
-		FullTextSession session = createMock(FullTextSession.class);
-		SearchFactory factory = createMock(SearchFactory.class);
+		FullTextQuery query = createMock( FullTextQuery.class );  //create mock for each object used
+		FullTextSession session = createMock( FullTextSession.class );
+		SearchFactory factory = createMock( SearchFactory.class );
 		
 		expect( session.getSearchFactory() )  //define expected calls
-				.andReturn(factory);   
-		expect( factory.getAnalyzer(Item.class) )
+				.andReturn( factory );
+		expect( factory.getAnalyzer( Item.class ) )
 				.andReturn( new StandardAnalyzer() );  //and return results 
 		expect( session.createFullTextQuery( 
-				            isA(Query.class),   //potentially restrict parameters
-				            eq(Item.class) ) 
-			  ).andReturn(query);
-		expect( query.setProjection("title") ).andReturn(query); //should call projection and return self
+				            isA( Query.class ),
+				            eq( Item.class ) ) //potentially restrict parameters
+			  ).andReturn( query );
+		expect( query.setProjection( "title" ) ).andReturn( query ); //should call projection and return self
 		
 		List<Object[]> results = new ArrayList<Object[]>();  //build query results
 		results.add( new Object[] {"The incredibles"} );
-		expect( query.list() ).andReturn(results);  //associates it to query execution
+		expect( query.list() ).andReturn( results );  //associates it to query execution
 		
-		SessionHolder.setFullTextSession(session);  //pass mock objects to the service
+		SessionHolder.setFullTextSession( session );  //pass mock objects to the service
 		
-		replay(factory);   //prepare mocks for listening
-		replay(query);
-		replay(session);
+		replay( factory );   //prepare mocks for listening
+		replay( query );
+		replay( session );
 		
-		List<String> titles = action.getTitleFromMatchingItems("title:incredibles"); //service executed using mocks
+		List<String> titles = action.getTitleFromMatchingItems( "title:incredibles" ); //service executed using mocks
 		
-		assert 1 == titles.size() : "should have two match, not " + titles.size();  //check results based on mocks
+		assert 1 == titles.size() : "should have two matches, not " + titles.size();  //check results based on mocks
 		assert "The incredibles".equals( titles.get(0) ) : "The incredibles";
 	}
 
