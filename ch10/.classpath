@@ -5,7 +5,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/jboss-javaee.jar"/>
 	<classpathentry kind="lib" path="/common/lib/antlr.jar"/>
-	<classpathentry kind="lib" path="/common/lib/apache-solr-analyzer.jar"/>
 	<classpathentry kind="lib" path="/common/lib/asm.jar"/>
 	<classpathentry kind="lib" path="/common/lib/asm-attrs.jar"/>
 	<classpathentry kind="lib" path="/common/lib/cglib.jar"/>
@@ -30,5 +29,7 @@
 	<classpathentry kind="lib" path="/common/lib/slf4j-api.jar"/>
 	<classpathentry kind="lib" path="/common/lib/slf4j-log4j12.jar"/>
 	<classpathentry kind="lib" path="/common/lib/testng-5.7-jdk15.jar"/>
+	<classpathentry kind="lib" path="/common/lib/solr-common.jar"/>
+	<classpathentry kind="lib" path="/common/lib/solr-core.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

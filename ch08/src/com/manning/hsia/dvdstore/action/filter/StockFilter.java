@@ -8,7 +8,9 @@ import org.apache.commons.collections.map.ReferenceMap;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.index.TermDocs;
+import org.apache.lucene.search.DocIdSet;
 import org.apache.lucene.search.Filter;
+import org.apache.lucene.util.DocIdBitSet;
 import org.hibernate.search.engine.DocumentBuilder;
 
 import com.manning.hsia.dvdstore.action.StockAction;
@@ -22,11 +24,11 @@ public class StockFilter extends Filter {
 	private volatile long lastUpdateTime;  //update timestamp
 
 	@SuppressWarnings("unchecked") 
-	private final Map<IndexReader, BitSet> cache = 
+	private final Map<IndexReader, DocIdSet> cache = 
 		new ReferenceMap(ReferenceMap.SOFT, ReferenceMap.HARD);  //keep cache in a SoftHashMap
 
 	@Override
-	public BitSet bits(IndexReader reader) throws IOException {
+	public DocIdSet getDocIdSet(IndexReader reader) throws IOException {
 		StockAction action = getStockAction();    //retrieve the service
 		long lastUpdateTime = action.geLastUpdateTime();
 		if ( lastUpdateTime != this.lastUpdateTime ) {
@@ -35,7 +37,7 @@ public class StockFilter extends Filter {
 			}
 		}
 		synchronized (cache) {
-			BitSet cached = cache.get(reader);  //check if in cache already
+			DocIdSet cached = cache.get(reader);  //check if in cache already
 			if (cached != null) return cached;
 		}
 		//not in cache, build info
@@ -57,12 +59,13 @@ public class StockFilter extends Filter {
 				}
 			}
 		}
+		DocIdSet docIdSet = new DocIdBitSet(bitSet); //build DocIdSet from BitSet
 		
 		synchronized (cache) {
-			cache.put(reader, bitSet);  //put results in the cache
+			cache.put(reader, docIdSet);  //put results in the cache
 		}
 		this.lastUpdateTime = lastUpdateTime;  //update timestamp
-		return bitSet;
+		return docIdSet;
 	}
 
 	private BitSet getAllPositiveBitSet(int maxDoc) {
