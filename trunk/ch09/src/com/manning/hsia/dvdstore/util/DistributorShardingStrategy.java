@@ -64,7 +64,7 @@ public class DistributorShardingStrategy implements
 			throw new IllegalArgumentException("Distributor id not found: " + distributorId);
 		}
 		if ( providerIndex > providers.length ) {
-			throw new IllegalArgumentException("Shard " +  providerIndex + " does nto exists");
+			throw new IllegalArgumentException("Shard " +  providerIndex + " does not exists");
 		}
 		return providers[providerIndex];  //provider where the document is added
 	}

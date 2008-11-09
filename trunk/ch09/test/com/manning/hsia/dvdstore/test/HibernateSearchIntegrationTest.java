@@ -25,7 +25,7 @@ public class HibernateSearchIntegrationTest {
 	protected void setUp() throws Exception {
 		AnnotationConfiguration configuration = new AnnotationConfiguration();
 		factory = configuration
-			.configure("hibernate-test.cfg.xml")
+			.configure( "hibernate-test.cfg.xml" )
 			.buildSessionFactory();    //build the session factory 
 		postSetUp();          //run post initialization
 	}
