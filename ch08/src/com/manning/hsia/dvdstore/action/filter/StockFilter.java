@@ -2,6 +2,7 @@ package com.manning.hsia.dvdstore.action.filter;
 
 import java.io.IOException;
 import java.util.BitSet;
+import java.util.Collections;
 import java.util.Map;
 
 import org.apache.commons.collections.map.ReferenceMap;
@@ -24,26 +25,23 @@ public class StockFilter extends Filter {
 	private volatile long lastUpdateTime;  //update timestamp
 
 	@SuppressWarnings("unchecked") 
-	private final Map<IndexReader, DocIdSet> cache = 
-		new ReferenceMap(ReferenceMap.SOFT, ReferenceMap.HARD);  //keep cache in a SoftHashMap
+	private final Map<IndexReader, DocIdSet>
+	    cache = Collections.synchronizedMap(
+		   new ReferenceMap(ReferenceMap.SOFT, ReferenceMap.HARD) );  //keep cache in a SoftHashMap
 
 	@Override
 	public DocIdSet getDocIdSet(IndexReader reader) throws IOException {
 		StockAction action = getStockAction();    //retrieve the service
 		long lastUpdateTime = action.geLastUpdateTime();
 		if ( lastUpdateTime != this.lastUpdateTime ) {
-			synchronized (cache) {  //clear outdated cache  
-				cache.clear();
-			}
+			cache.clear(); //clear outdated cache  
 		}
-		synchronized (cache) {
-			DocIdSet cached = cache.get(reader);  //check if in cache already
-			if (cached != null) return cached;
-		}
+		DocIdSet cached = cache.get( reader );  //check if in cache already
+		if ( cached != null ) return cached;
 		//not in cache, build info
 		final BitSet bitSet = getAllPositiveBitSet( reader.maxDoc() ); //by default, all documents pass
 		
-		Term clazzTerm = new Term(DocumentBuilder.CLASS_FIELDNAME, Item.class.getName() );
+		Term clazzTerm = new Term( DocumentBuilder.CLASS_FIELDNAME, Item.class.getName() );
 		if ( reader.docFreq( clazzTerm ) == 0) {  //no need to filter
 			//index does not contain Item objects
 			//no-op
@@ -53,24 +51,21 @@ public class StockFilter extends Filter {
 			//and switch off the corresponding bit
 			for ( String ean : action.getEanOfItemsOutOfStock() ) {  //invoke external service
 				Term term = new Term( "ean", ean );
-				TermDocs termDocs = reader.termDocs(term);  //find document by ean
+				TermDocs termDocs = reader.termDocs( term );  //find document by ean
 				while ( termDocs.next() ) {
-					bitSet.clear(termDocs.doc());
+					bitSet.clear( termDocs.doc() );
 				}
 			}
 		}
-		DocIdSet docIdSet = new DocIdBitSet(bitSet); //build DocIdSet from BitSet
-		
-		synchronized (cache) {
-			cache.put(reader, docIdSet);  //put results in the cache
-		}
+		DocIdSet docIdSet = new DocIdBitSet( bitSet ); //build DocIdSet from BitSet
+		cache.put( reader, docIdSet );  //put results in the cache
 		this.lastUpdateTime = lastUpdateTime;  //update timestamp
 		return docIdSet;
 	}
 
 	private BitSet getAllPositiveBitSet(int maxDoc) {
-		final BitSet bitSet = new BitSet(maxDoc);
-		bitSet.set(0, maxDoc-1);        //new BitSet with all bits on
+		final BitSet bitSet = new BitSet( maxDoc );
+		bitSet.set( 0, maxDoc-1 );        //new BitSet with all bits on
 		return bitSet;
 	}
 
