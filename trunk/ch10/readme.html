@@ -1,27 +1,35 @@
 <html>
-<head><title>Chapter 1- - Hibernate Search in Action</title></head>
+<head><title>Chapter 10 - Hibernate Search in Action</title></head>
 <body>
 <h1>Chapter 10 - Hibernate Search in Action</h1>
 <p>This chapter describes how to deploy Hibernate Search in a cluster.</p>
 
 <h2>Project structure</h2>
 <h3>src</h3>
-<p>Contains the application deployed. META-INF/persistence-slave.xml describes the slave configuration. META-INF/persistence-master.xml describes the master configuration.</p>
-<p>The action package contains the EJB 3 component simulating the application. The master package contains the MessageDrivenBean listening to the Hibernate Search queue and indexing on the master. The web package contains a servlet simluating a call to the application and a change to one of the entities.</p>
+<p>Contains the application deployed. <code>META-INF/persistence-slave.xml</code> describes the slave configuration. <code>META-INF/persistence-master.xml</code> describes the master configuration.</p>
+<p>The action package contains the <acronym>EJB3</acronym> component simulating the application. The master package contains the MessageDrivenBean listening to the Hibernate Search queue and indexing on the master. The web package contains a servlet simulating a call to the application and a change to one of the entities.</p>
 
 <h3>test</h3>
 <p>No test is available in this chapter. Deploy the application and see the changes being propagated.</p>
 
 <h3>etc</h3>
-<p>contains the WAR web.xml config file. Thsi file declare the servlet we are using.</p>
+<p>contains the WAR <code>web.xml</code> config file. This file declares the servlet we are using.</p>
 
 <h3>serverconfig</h3>
 <p>Represents the whole configuration directory for JBoss AS 5 of both the master node and the slave node.</p>
-<p>You can copy these directories under $JBOSS_HOME/server and run JBoss AS 5 in $JBOSS/bin using ./run.sh -c master or ./run.sh -c slave</p>
+<p>You can copy these directories under $JBOSS_HOME/server and run JBoss AS 5 in $JBOSS_HOME/bin using <code>./run.sh -c master</code> or <code>./run.sh -c slave</code></p>
 <p>JBoss AS 5 is available at <a href="http://www.jboss.org/jbossas/">jboss.org</a>
 
 <h3>Dependencies</h3>
 <p>You can find the libraries necessary to compile and run the tests in ../common/lib. You also need to add the libraries found in ./lib</p>
-<p>The ant script is slightly different than the other projects. use ant clean to clear, use ant compile to compile the project, use ant package to create the necessary EARs (distribution). use ant redeploy to deploy the various artifacts in JBoss AS.
-<p>You need to update build.properties and adjust jboss.slave.deploy andf jboss.mster.deploy to poin to the deploy directory you wish to deploy the projects on.</p>
-</body></html>
+<p>The ant script is slightly different than the other projects.
+Use the following ant targets:</p>
+<dl>
+  <dt><code>ant clean</code></dt><dd>to clear</dd>
+  <dt><code>ant compile</code></dt><dd>to compile the project</dd>
+  <dt><code>ant package</code></dt><dd>to create the necessary EARs (distribution)</dd>
+  <dt><code>ant redeploy</code></dt><dd>to deploy the various artifacts in JBoss AS</dd>
+ </dl>
+<p>You need to update <code>build.properties</code> and adjust <code>jboss.slave.deploy</code> and <code>jboss.master.deploy</code> to point to the deploy directory you wish to deploy the projects on.</p>
+</body>
+</html>
