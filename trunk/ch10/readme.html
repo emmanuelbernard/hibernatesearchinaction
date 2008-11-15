@@ -22,6 +22,8 @@
 
 <h3>Dependencies</h3>
 <p>You can find the libraries necessary to compile and run the tests in ../common/lib. You also need to add the libraries found in ./lib</p>
+
+<h3>Ant targets</h3>
 <p>The ant script is slightly different than the other projects.
 Use the following ant targets:</p>
 <dl>
@@ -31,5 +33,8 @@ Use the following ant targets:</p>
   <dt><code>ant redeploy</code></dt><dd>to deploy the various artifacts in JBoss AS</dd>
  </dl>
 <p>You need to update <code>build.properties</code> and adjust <code>jboss.slave.deploy</code> and <code>jboss.master.deploy</code> to point to the deploy directory you wish to deploy the projects on.</p>
+
+<h3>Running the demo</h3>
+To create a new Item and test the index work being sent through JMS, point the browser to /dvdstore-slave/item on the JBoss slave instance.
 </body>
 </html>
