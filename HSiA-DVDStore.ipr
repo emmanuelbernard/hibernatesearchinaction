@@ -193,6 +193,13 @@
               <file url="file://$PROJECT_DIR$/ch04/src/hibernate.cfg.xml" />
             </files>
           </module>
+          <module name="ch07">
+            <files>
+              <file url="file://$PROJECT_DIR$/ch07/src/hibernate.cfg.xml" />
+            </files>
+          </module>
+          <module name="ch11" />
+          <module name="ch12" />
         </modules>
       </facet-type>
       <facet-type id="jpa">
@@ -286,7 +293,7 @@
   <component name="JavacSettings">
     <option name="DEBUGGING_INFO" value="true" />
     <option name="GENERATE_NO_WARNINGS" value="false" />
-    <option name="DEPRECATION" value="true" />
+    <option name="DEPRECATION" value="false" />
     <option name="ADDITIONAL_OPTIONS_STRING" value="" />
     <option name="MAXIMUM_HEAP_SIZE" value="128" />
   </component>
@@ -454,16 +461,17 @@
       <module fileurl="file://$PROJECT_DIR$/ch04/ch04.iml" filepath="$PROJECT_DIR$/ch04/ch04.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch05/ch05.iml" filepath="$PROJECT_DIR$/ch05/ch05.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch06/ch06.iml" filepath="$PROJECT_DIR$/ch06/ch06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch07/ch07.iml" filepath="$PROJECT_DIR$/ch07/ch07.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch08/ch08.iml" filepath="$PROJECT_DIR$/ch08/ch08.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch09/ch09.iml" filepath="$PROJECT_DIR$/ch09/ch09.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch10/ch10.iml" filepath="$PROJECT_DIR$/ch10/ch10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch11/ch11.iml" filepath="$PROJECT_DIR$/ch11/ch11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch12/ch12.iml" filepath="$PROJECT_DIR$/ch12/ch12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch13/ch13.iml" filepath="$PROJECT_DIR$/ch13/ch13.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" assert-keyword="true" jdk-15="true" project-jdk-name="1.5" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
-  </component>
-  <component name="ReadonlyStatusHandler">
-    <option name="SHOW_DIALOG" value="true" />
   </component>
   <component name="ResourceManagerContainer">
     <option name="myResourceBundles">
@@ -505,9 +513,6 @@
     <option name="myValidatorValidationEnabled" value="true" />
     <option name="myReportErrorsAsWarnings" value="true" />
   </component>
-  <component name="SvnBranchConfigurationManager">
-    <option name="myVersion" value="123" />
-  </component>
   <component name="SvnChangesBrowserSettings">
     <option name="USE_AUTHOR_FIELD" value="true" />
     <option name="AUTHOR" value="" />
@@ -524,6 +529,7 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="svn" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
