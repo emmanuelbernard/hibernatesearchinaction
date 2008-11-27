@@ -1,7 +1,7 @@
 package com.manning.hsia.dvdstore.ex12_6;
 
-import com.jboss.dvd.seam.*;
 import com.manning.hsia.test.ch12.SearchTestCase;
+import com.manning.hsia.test.Product;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.search.BooleanClause;
@@ -49,7 +49,7 @@ public class TestSalesmanSearch extends SearchTestCase {
 			assert results.size() > 0 : "no results returned";
 			for (Object[] result : results) {
 				System.out.println( "score => " + result[1] );
-				Document doc = (Document) result[0];
+//				Document doc = (Document) result[0];
 
 				System.out.println( hibQuery
 					.explain( (Integer) result[2] ) );
@@ -79,11 +79,6 @@ public class TestSalesmanSearch extends SearchTestCase {
 	protected Class[] getMappings() {
 		return new Class[]{
 			Product.class,
-			Actor.class,
-			Category.class,
-			Inventory.class,
-			OrderLine.class,
-			Order.class
 		};
 	}
 

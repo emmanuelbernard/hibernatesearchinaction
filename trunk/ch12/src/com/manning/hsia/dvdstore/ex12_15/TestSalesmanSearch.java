@@ -1,7 +1,7 @@
 package com.manning.hsia.dvdstore.ex12_15;
 
-import com.jboss.dvd.seam.*;
 import com.manning.hsia.test.ch12.SearchTestCase;
+import com.manning.hsia.test.Product;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.search.Query;
 import org.hibernate.Transaction;
@@ -73,11 +73,6 @@ public class TestSalesmanSearch extends SearchTestCase {
 	protected Class[] getMappings() {
 		return new Class[]{
 			Product.class,
-			Actor.class,
-			Category.class,
-			Inventory.class,
-			OrderLine.class,
-			Order.class
 		};
 	}
 

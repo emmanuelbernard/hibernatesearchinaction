@@ -30,6 +30,8 @@ public class TermPositionsTest extends SearchTestCase {
 		buildIndex(session, tx);
 
 		try {
+			tx = session.beginTransaction();
+
 			Query query =
 				new TermQuery(new Term("content",
 					"properties"));

@@ -15,7 +15,7 @@ import java.io.File;
 import java.util.List;
 
 import com.manning.hsia.test.ch12.SearchTestCase;
-import com.jboss.dvd.seam.*;
+import com.manning.hsia.test.Product;
 
 public class TestSalesmanSearch extends SearchTestCase {
 
@@ -59,11 +59,6 @@ public class TestSalesmanSearch extends SearchTestCase {
 	protected Class[] getMappings() {
 		return new Class[]{
 			Product.class,
-			Actor.class,
-			Category.class,
-			Inventory.class,
-			OrderLine.class,
-			Order.class
 		};
 	}
 
