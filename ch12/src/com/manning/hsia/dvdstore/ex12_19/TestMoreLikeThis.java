@@ -1,7 +1,7 @@
 package com.manning.hsia.dvdstore.ex12_19;
 
-import com.jboss.dvd.seam.*;
 import com.manning.hsia.test.ch12.SearchTestCase;
+import com.manning.hsia.test.Product;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.IndexReader;
@@ -105,11 +105,6 @@ public class TestMoreLikeThis extends SearchTestCase {
 	protected Class[] getMappings() {
 		return new Class[]{
 			Product.class,
-			Actor.class,
-			Category.class,
-			Inventory.class,
-			OrderLine.class,
-			Order.class
 		};
 	}
 
