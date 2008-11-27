@@ -64,16 +64,9 @@ public abstract class SearchTestCase extends HSiATestCase {
    }
 
    protected void copyIndexes() throws IOException {
-      File actorSrcDir = new File(new File("dvd_index_backup/com.jboss.dvd.seam.Actor").getAbsolutePath());
-      File categorySrcDir = new File(new File("dvd_index_backup/com.jboss.dvd.seam.Category").getAbsolutePath());
-      File productSrcDir = new File(new File("dvd_index_backup/com.jboss.dvd.seam.Product").getAbsolutePath());
+      File productSrcDir = new File(new File("dvd_index_backup/com.manning.hsia.test.Product").getAbsolutePath());
+      File productDestDir = new File(locateBaseDir().getAbsolutePath() + "/com.manning.hsia.test.Product");
 
-      File actorDestDir = new File(locateBaseDir().getAbsolutePath() + "/com.jboss.dvd.seam.Actor");
-      File categoryDestDir = new File(locateBaseDir().getAbsolutePath() + "/com.jboss.dvd.seam.Category");
-      File productDestDir = new File(locateBaseDir().getAbsolutePath() + "/com.jboss.dvd.seam.Product");
-
-      FileUtils.copyDirectory(actorSrcDir, actorDestDir);
-      FileUtils.copyDirectory(categorySrcDir, categoryDestDir);
       FileUtils.copyDirectory(productSrcDir, productDestDir);
    }
 }
