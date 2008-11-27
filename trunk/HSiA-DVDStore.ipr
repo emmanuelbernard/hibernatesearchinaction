@@ -200,6 +200,7 @@
           </module>
           <module name="ch11" />
           <module name="ch12" />
+          <module name="ch13" />
         </modules>
       </facet-type>
       <facet-type id="jpa">
