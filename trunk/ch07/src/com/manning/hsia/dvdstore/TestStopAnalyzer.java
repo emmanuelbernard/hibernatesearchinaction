@@ -21,8 +21,9 @@ public class TestStopAnalyzer {
 			stream = analyzer.tokenStream( phrase, reader );
 			ArrayList<String> terms = new ArrayList<String>();
 
+			Token token = new Token( );
 			while (true) {
-				Token token = stream.next();
+				token = stream.next( token );
 				if ( token == null ) {
 					break;
 				}
