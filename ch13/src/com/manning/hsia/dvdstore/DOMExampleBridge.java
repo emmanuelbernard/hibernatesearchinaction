@@ -108,7 +108,7 @@ public class DOMExampleBridge implements FieldBridge {
 									.getLocalName().toLowerCase(),
 									node.getNodeValue(),
 									Field.Store.YES,
-									Field.Index.TOKENIZED );
+									Field.Index.ANALYZED );
 							mFieldList.add( field );
 						}
 					}
