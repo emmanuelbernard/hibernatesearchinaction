@@ -43,9 +43,9 @@ public class SynonymHelper {
 		throws IOException {
 		Set<String> querySet = new HashSet(); // avoid dups
 		TokenStream ts = a.tokenStream("word", new StringReader(query));
-		Token t;
+		Token t = new Token();
 		String anaQuery;
-		while ((t = ts.next()) != null) {
+		while ((t = ts.next( t )) != null) {
 			anaQuery = new String(t.termBuffer(), 0, t.termLength());
 			querySet.add(anaQuery);
 		}
