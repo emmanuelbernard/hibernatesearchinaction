@@ -15,7 +15,7 @@ import java.util.List;
 
 public class TestReadTextFile extends SearchTestCase {
 	@Test
-	public void testTestFile() throws Exception {
+	public void testTextFile() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();
 
