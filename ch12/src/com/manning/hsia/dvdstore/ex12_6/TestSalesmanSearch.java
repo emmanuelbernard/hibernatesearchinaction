@@ -49,7 +49,6 @@ public class TestSalesmanSearch extends SearchTestCase {
 			assert results.size() > 0 : "no results returned";
 			for (Object[] result : results) {
 				System.out.println( "score => " + result[1] );
-//				Document doc = (Document) result[0];
 
 				System.out.println( hibQuery
 					.explain( (Integer) result[2] ) );
