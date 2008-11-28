@@ -6,20 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch03/ch03.iml" afterPath="$PROJECT_DIR$/ch03/ch03.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch06/ch06.iml" afterPath="$PROJECT_DIR$/ch06/ch06.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch13/readme.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch11/readme.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch07/readme.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_6/TestSalesmanSearch.java" afterPath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_6/TestSalesmanSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch13/ch13.iml" afterPath="$PROJECT_DIR$/ch13/ch13.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch02/ch02.iml" afterPath="$PROJECT_DIR$/ch02/ch02.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch04/ch04.iml" afterPath="$PROJECT_DIR$/ch04/ch04.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch12/readme.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch06/ch06.iml" afterPath="$PROJECT_DIR$/ch06/ch06.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch05/ch05.iml" afterPath="$PROJECT_DIR$/ch05/ch05.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_6/TestSalesmanSearch.java" afterPath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_6/TestSalesmanSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch02/ch02.iml" afterPath="$PROJECT_DIR$/ch02/ch02.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_9/TestSalesmanSearch.java" afterPath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_9/TestSalesmanSearch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HSiA-DVDStore.iws" afterPath="$PROJECT_DIR$/HSiA-DVDStore.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch10/ch10.iml" afterPath="$PROJECT_DIR$/ch10/ch10.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HSiA-DVDStore.ipr" afterPath="$PROJECT_DIR$/HSiA-DVDStore.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HSiA-DVDStore.iws" afterPath="$PROJECT_DIR$/HSiA-DVDStore.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch08/ch08.iml" afterPath="$PROJECT_DIR$/ch08/ch08.iml" />
     </list>
     <ignored path="HSiA-DVDStore.iws" />
@@ -116,18 +110,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="readme.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch09/readme.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="35" selection-start="232" selection-end="232" vertical-scroll-proportion="0.21518987">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ch07/readme.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="40" selection-start="301" selection-end="301" vertical-scroll-proportion="0.23943663">
+            <state line="9" column="0" selection-start="998" selection-end="998" vertical-scroll-proportion="0.2766727">
               <folding />
             </state>
           </provider>
@@ -136,7 +121,7 @@
       <file leaf-file-name="readme.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ch11/readme.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="14" selection-start="0" selection-end="532" vertical-scroll-proportion="0.38908452">
+            <state line="9" column="24" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.2766727">
               <folding />
             </state>
           </provider>
@@ -145,7 +130,7 @@
       <file leaf-file-name="readme.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ch13/readme.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="131" selection-end="131" vertical-scroll-proportion="0.12296564">
+            <state line="9" column="147" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.2766727">
               <folding />
             </state>
           </provider>
@@ -154,7 +139,7 @@
       <file leaf-file-name="readme.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ch12/readme.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="67" selection-start="198" selection-end="198" vertical-scroll-proportion="0.11971831">
+            <state line="9" column="0" selection-start="981" selection-end="981" vertical-scroll-proportion="0.2766727">
               <folding />
             </state>
           </provider>
@@ -899,7 +884,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replaced deprecated use of search(query) and Hits object&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -913,13 +898,14 @@
     <MESSAGE value="Retired" />
     <MESSAGE value="Added ch12 tests" />
     <MESSAGE value="Removed classes other than Product from copy" />
-    <MESSAGE value="Initial entry" />
     <MESSAGE value="Added ch 13" />
     <MESSAGE value="Replaced deprecated method cal in Token token = strem.next()" />
     <MESSAGE value="Replaced deprecated use of search(query) and Hits object&#10;Add comment in main method to tek the user that the test index will have to be set up by them&#10;" />
     <MESSAGE value="Replaced deprecated use of tokenstream.next()" />
     <MESSAGE value="Replaced deprecated Index.TOKENIZED with ANALYZED" />
     <MESSAGE value="Replaced deprecated use of search(query) and Hits object&#10;" />
+    <MESSAGE value="Initial entry" />
+    <MESSAGE value="laborated explanation of directory contents" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1012,28 +998,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ch07/readme.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="40" selection-start="301" selection-end="301" vertical-scroll-proportion="0.23943663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch12/readme.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="67" selection-start="198" selection-end="198" vertical-scroll-proportion="0.11971831">
+        <state line="9" column="0" selection-start="998" selection-end="998" vertical-scroll-proportion="0.2766727">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ch11/readme.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="0" selection-end="532" vertical-scroll-proportion="0.38908452">
+        <state line="9" column="24" selection-start="1025" selection-end="1025" vertical-scroll-proportion="0.2766727">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch12/readme.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="981" selection-end="981" vertical-scroll-proportion="0.2766727">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ch13/readme.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="131" selection-end="131" vertical-scroll-proportion="0.12296564">
+        <state line="9" column="147" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.2766727">
           <folding />
         </state>
       </provider>
