@@ -34,25 +34,29 @@ public class TestSpellChecker extends SearchTestCase {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();
 
-		buildIndex( session, tx );
+		try {
+			buildIndex( session, tx );
 
-		tx = session.beginTransaction();
-		SpellChecker spellChecker = buildSpellCheckIndex( "description", session );
+			tx = session.beginTransaction();
+			SpellChecker spellChecker = buildSpellCheckIndex( "description", session );
 
 
-		String misspelledUserInput = "kenu";
+			String misspelledUserInput = "kenu";
 
-		assert !spellChecker.exist( misspelledUserInput ) : "misspelled word found";
+			assert !spellChecker.exist( misspelledUserInput ) : "misspelled word found";
 
-		String[] suggestions = spellChecker.suggestSimilar( misspelledUserInput, 5 );
-		assert suggestions.length == 1 : "incorrect suggestion count";
-		for (String suggestion : suggestions) {
-			System.out.println( suggestion );
-			assert suggestion.equals( "keanu" );
+			String[] suggestions = spellChecker.suggestSimilar( misspelledUserInput, 5 );
+			assert suggestions.length == 1 : "incorrect suggestion count";
+			for (String suggestion : suggestions) {
+				System.out.println( suggestion );
+				assert suggestion.equals( "keanu" );
+			}
+
+			tx.commit();
 		}
-
-		tx.commit();
-		session.close();
+		finally {
+			session.close();
+		}
 	}
 
 	private SpellChecker buildSpellCheckIndex( String fieldName, FullTextSession session ) throws Exception {
