@@ -82,11 +82,6 @@ public class TestBoostingQuery extends SearchTestCase {
 	protected Class[] getMappings() {
 		return new Class[]{
 			Product.class,
-//			Actor.class,
-//			Category.class,
-//			Inventory.class,
-//			OrderLine.class,
-//			Order.class
 		};
 	}
 
