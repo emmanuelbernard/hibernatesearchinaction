@@ -7,13 +7,9 @@ import org.apache.lucene.search.FuzzyQuery;
 import org.apache.lucene.search.Query;
 
 public class MyQueryParser extends QueryParser {
-	private String field;
-	private Analyzer analyzer;
 
 	public MyQueryParser(String field, Analyzer analyzer) {
 		super(field, analyzer);
-		this.field = field;
-		this.analyzer = analyzer;
 	}
 
 	@Override
