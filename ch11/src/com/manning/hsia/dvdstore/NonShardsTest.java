@@ -18,7 +18,6 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.util.List;
 
-
 public class NonShardsTest extends SearchTestCase {
 	Transaction tx;
 	private Logger mLogger = Logger.getLogger( NonShardsTest.class.getName());
