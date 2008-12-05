@@ -5,7 +5,6 @@ import java.util.List;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.TermQuery;
-import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.search.FullTextSession;
 import org.hibernate.search.Search;
@@ -14,7 +13,6 @@ import org.testng.annotations.Test;
 import com.manning.hsia.dvdstore.action.Indexer;
 import com.manning.hsia.dvdstore.model.Item;
 import com.manning.hsia.dvdstore.util.TestCase;
-
 
 public class IndexerTest extends TestCase {
 	
