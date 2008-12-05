@@ -6,7 +6,6 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.testng.annotations.Test;
 
-import com.manning.hsia.dvdstore.action.Indexer;
 import com.manning.hsia.dvdstore.action.Searcher;
 import com.manning.hsia.dvdstore.model.Item;
 import com.manning.hsia.dvdstore.util.SessionHolder;
@@ -50,6 +49,4 @@ public class SearchTest extends TestCase {
 		s.close();
 	}
 	
-	
-
 }
