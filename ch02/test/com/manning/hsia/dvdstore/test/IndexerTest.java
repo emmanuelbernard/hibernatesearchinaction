@@ -38,6 +38,4 @@ public class IndexerTest extends TestCase {
 		s.close();
 	}
 	
-	
-
 }
