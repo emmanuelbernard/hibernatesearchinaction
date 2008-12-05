@@ -3,14 +3,10 @@ package com.manning.hsia.dvdstore.action;
 import java.util.List;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
 
 import org.hibernate.Session;
 import org.hibernate.search.FullTextSession;
 import org.hibernate.search.jpa.FullTextEntityManager;
-import org.hibernate.search.jpa.Search;
 
 import com.manning.hsia.dvdstore.model.Item;
 import com.manning.hsia.dvdstore.util.EntityManagerHolder;
@@ -30,8 +26,6 @@ public class Indexer {
 		
 		@SuppressWarnings("unchecked")
 		List<Item> items = em.createQuery("select i from Item i").getResultList();
-		
-		
 		
 		for (Item item : items) {
 		    ftem.index(item);  //manually index an item instance
