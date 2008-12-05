@@ -1,6 +1,5 @@
 package com.manning.hsia.dvdstore.test;
 
-
 import java.util.List;
 
 import org.apache.lucene.index.Term;
@@ -13,7 +12,6 @@ import org.testng.annotations.Test;
 
 import com.manning.hsia.dvdstore.model.Drink;
 import com.manning.hsia.dvdstore.model.Dvd;
-import com.manning.hsia.dvdstore.model.Item;
 
 public class InheritanceTest extends com.manning.hsia.dvdstore.util.TestCase {
 	@Test(groups="ch03")
