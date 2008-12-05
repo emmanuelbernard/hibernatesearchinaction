@@ -36,8 +36,6 @@ public class ParameterizedPaddedRoundedPriceBridge implements StringBridge, Para
 			throw new IllegalArgumentException(PaddedRoundedPriceBridge.class 
 					+ " used one a non double type: " + value.getClass() );
 		}
-		
-		
 	}
 
 	private long round(double price) {
