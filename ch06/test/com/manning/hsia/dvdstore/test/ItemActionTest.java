@@ -3,19 +3,11 @@ package com.manning.hsia.dvdstore.test;
 import java.lang.reflect.Proxy;
 import java.util.List;
 
-import org.hibernate.CacheMode;
-import org.hibernate.FlushMode;
-import org.hibernate.HibernateException;
-import org.hibernate.ScrollMode;
-import org.hibernate.ScrollableResults;
 import org.hibernate.Transaction;
 import org.hibernate.search.FullTextSession;
 import org.hibernate.search.Search;
-import org.hibernate.search.SearchException;
 import org.testng.annotations.Test;
 
-import com.manning.hsia.dvdstore.action.DisplayAction;
-import com.manning.hsia.dvdstore.action.DisplayActionImpl;
 import com.manning.hsia.dvdstore.action.ItemAction;
 import com.manning.hsia.dvdstore.action.ItemActionImpl;
 import com.manning.hsia.dvdstore.model.Item;
