@@ -1,0 +1,18 @@
+<html>
+<head><title>Chapter 11 - Hibernate Search in Action</title></head>
+<body>
+<h1>Chapter 11 - Hibernate Search in Action</h1>
+<p>This chapter describes the various ways to access the native Lucene APIs when working with Hibernate Search.</p>
+
+<p>The dvd_index directory is the woking directory for the majority of examples that do not use a RAMDirectory. This means tests which build their own index will build it in this directory. Since they clean up after themselves, files will be deleted from this directory.</p>
+<p>dvd_index_backup holds copies of the dvd_index for copying to the dvd_index directory when running test concerning it. This is taken care of by the tests themselves.</p>
+<p>Quite a few of the tests run in a RAM directory so they will not be available to Luke should you want to examine them. This is easily remedied by placing a configuration method in the appropriate test and specifying the FSDirectoryProvider. Also if there is already a configuration present just change the directory type.</p>
+
+<h2>Project structure</h2>
+<h3>src</h3>
+<p>Contains the example codes from the book.</p>
+<h3>test</h3>
+<p>Contains additional classes needed by the tests</p>
+<h3>Dependencies</h3>
+<p>You can find the libraries necessary to compile and run the tests in ../common/lib</p>
+</body></html>

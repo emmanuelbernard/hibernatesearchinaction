@@ -1,0 +1,28 @@
+<ivyconf>
+    <!-- conf defaultResolver="jboss-rep"/ -->
+    <conf defaultResolver="jboss-rep"/>
+    <resolvers>
+        <chain name="jboss-rep">
+            <url name="jboss-rep-regular" m2compatible="true">
+                <artifact pattern="http://repository.jboss.org/maven2/[organization]/[module]/[revision]/[artifact]-[revision].[ext]"/>
+            </url>
+            <url name="maven-repo" m2compatible="true">
+                <artifact pattern="http://repo1.maven.org/maven2/[organization]/[module]/[revision]/[artifact]-[revision].[ext]"/>
+            </url>
+        </chain>
+        <chain name="rep-hibernate" returnFirst="true" latest="latest-revision">
+            <filesystem name="maven-local" m2compatible="true">
+                <artifact pattern="${offline.repository.jboss.org}/[organization]/[module]/[revision]/[artifact]-[revision].[ext]"/>
+            </filesystem>
+            <url name="jboss-rep-maven-regular" m2compatible="true">
+                <artifact pattern="http://repository.jboss.org/maven2/[organization]/[module]/[revision]/[artifact]-[revision].[ext]"/>
+            </url>
+            <url name="jboss-rep-maven-hibernatestyle" m2compatible="true">
+                <artifact pattern="http://repository.jboss.org/maven2/[organization]/hibernate-[module]/[revision]/hibernate-[artifact]-[revision].[ext]"/>
+            </url>
+        </chain>
+    </resolvers>
+    <modules>
+        <module organisation="org.hibernate" name="*" resolver="rep-hibernate"/>
+    </modules>
+</ivyconf>
