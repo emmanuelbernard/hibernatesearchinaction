@@ -16,7 +16,7 @@ public class TestFuzzyTermEnum extends SearchTestCase {
 	String[] titles = new String[]{"Titan A.E.", "Little Women", "Little Shop of Horrors",
 		"The Green Mile", "Somewhere in Time"};
 
-	@Test
+	@Test(groups="ch07")
 	public void testFuzzyQueryEnum() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();

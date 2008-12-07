@@ -21,7 +21,7 @@ public class TestSynonyms  extends SearchTestCase {
 		"Jamie Lee Curtis finds out that he's not really a used car salesman"
 	};
 
-	@Test
+	@Test(groups="ch13")
 	public void testQuery() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.getTransaction();

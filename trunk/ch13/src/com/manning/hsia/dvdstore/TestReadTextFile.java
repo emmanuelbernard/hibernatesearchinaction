@@ -14,7 +14,7 @@ import java.io.*;
 import java.util.List;
 
 public class TestReadTextFile extends SearchTestCase {
-	@Test
+	@Test(groups="ch13")
 	public void testTextFile() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();

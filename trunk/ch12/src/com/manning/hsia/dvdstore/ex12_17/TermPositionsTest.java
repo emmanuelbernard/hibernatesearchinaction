@@ -23,7 +23,7 @@ public class TermPositionsTest extends SearchTestCase {
 	IndexReader reader;
 	ReaderProvider provider;
 
-	@Test
+	@Test(groups="ch12")
 	public void vectorTest() throws Exception {
 		FullTextSession session = Search.getFullTextSession(openSession());
 		Transaction tx = session.beginTransaction();

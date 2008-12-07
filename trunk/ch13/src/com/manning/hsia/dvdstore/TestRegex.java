@@ -23,7 +23,7 @@ public class TestRegex extends SearchTestCase {
 		"Jamie Lee Curtis finds out that he's not really a salesman"
 	};
 
-	@Test
+	@Test(groups="ch13")
 	public void testRegex1() throws Exception {
 		try {
 			buildIndex();
@@ -35,7 +35,7 @@ public class TestRegex extends SearchTestCase {
 		}
 	}
 
-	@Test
+	@Test(groups="ch13")
 	public void testRegex2() throws Exception {
 		try {
 			buildIndex();
@@ -47,7 +47,7 @@ public class TestRegex extends SearchTestCase {
 		}
 	}
 
-	@Test
+	@Test(groups="ch13")
 	public void testSpanRegex1() throws Exception {
 		try {
 			buildIndex();
@@ -59,7 +59,7 @@ public class TestRegex extends SearchTestCase {
 		}
 	}
 
-	@Test
+	@Test(groups="ch13")
 	public void testSpanRegex2() throws Exception {
 		try {
 			buildIndex();

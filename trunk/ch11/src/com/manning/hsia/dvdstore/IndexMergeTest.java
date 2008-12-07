@@ -23,7 +23,7 @@ import java.util.List;
 public class IndexMergeTest extends SearchTestCase {
 	Transaction tx;
 
-	@Test
+	@Test(groups="ch11")
 	public void testTwoEntitiesNoShards() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		buildIndex( session );
@@ -97,7 +97,7 @@ public class IndexMergeTest extends SearchTestCase {
 		session.clear();
 	}
 
-	@BeforeClass
+	@BeforeClass(groups="ch11", alwaysRun=true)
 	protected void setUp
 		() throws Exception {
 		File sub = locateBaseDir();

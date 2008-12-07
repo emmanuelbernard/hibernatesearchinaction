@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 
 public class TestStopAnalyzer {
-	@Test
+	@Test(groups="ch07")
 	public void testStopAnalyzer() throws Exception {
 		String phrase = "The Britannic, Olympic and Titanic were the White Star liners.";
 		StringReader reader = new StringReader( phrase );

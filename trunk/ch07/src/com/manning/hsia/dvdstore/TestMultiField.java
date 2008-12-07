@@ -15,7 +15,7 @@ public class TestMultiField extends SearchTestCase {
 	String[] titles = new String[]{"The Nun's Story", "Toy Story", "The Philadelphia Story", "Toy Story 2", "Ever After - A Cinderella Story", "Dodgeball - A True Underdog Story", "The Miracle Maker - The Story of Jesus", "Films of Faith Collection", "Dragonfly"};
 	String[] descs = new String[]{"", "", "", "", "", "", "", "Fred Zinneman's epic The Nun's Story", "Belief gets us there explains nun Linda Hunt"};
 
-	@Test
+	@Test(groups="ch07")
 	public void testMultiFieldQueryParser() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();

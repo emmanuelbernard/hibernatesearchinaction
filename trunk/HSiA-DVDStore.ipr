@@ -511,6 +511,24 @@
     <option name="myReportErrorsAsWarnings" value="true" />
   </component>
   <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://hibernatesearchinaction.googlecode.com/svn/81" />
+                  <option value="https://hibernatesearchinaction.googlecode.com/svn/branches" />
+                  <option value="https://hibernatesearchinaction.googlecode.com/svn/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://hibernatesearchinaction.googlecode.com/svn/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="myVersion" value="123" />
   </component>
   <component name="SvnChangesBrowserSettings">

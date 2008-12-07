@@ -17,7 +17,7 @@ public class TestBooleanQuery extends SearchTestCase {
 		"Ever After - A Cinderella Story", "Dodgeball - A True Underdog Story", "The Miracle Maker - The Story of Jesus",
 		"The Office - Season One", "Gargoyles - Season Two, Vol. 1"};
 
-	@Test
+	@Test(groups="ch07")
 	public void testBooleanQuery1() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();

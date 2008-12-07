@@ -30,7 +30,7 @@ public class TestMoreLikeThis extends SearchTestCase {
 			+ "agrees to help a woman";
 	String[] moreLikeFields = new String[]{"description"};
 
-	@Test
+	@Test(groups="ch12")
 	public void testMoreLikeThis() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();
@@ -87,7 +87,7 @@ public class TestMoreLikeThis extends SearchTestCase {
 		return readerProvider.openReader( provider );
 	}
 
-	@BeforeClass
+	@BeforeClass(groups="ch12", alwaysRun=true)
 	protected void setUp() throws Exception {
 		File sub = locateBaseDir();
 		File[] files = sub.listFiles();

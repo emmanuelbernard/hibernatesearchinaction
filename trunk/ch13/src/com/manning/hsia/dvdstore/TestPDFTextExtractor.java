@@ -24,7 +24,7 @@ public class TestPDFTextExtractor extends SearchTestCase {
 	InputStream istream = null;
 	private Analyzer analyzer = new StandardAnalyzer();
 
-	@Test
+	@Test(groups="ch13")
 	public void testPDFExtractor() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();
@@ -41,7 +41,7 @@ public class TestPDFTextExtractor extends SearchTestCase {
 			Pdf pdf = getDocument( doc );
 			closeInputStream( istream );
 			closeDocument( doc );
-
+			pdf.setId(1);
 			buildIndex( pdf, session, tx );
 
 			QueryParser parser = new QueryParser( "description", analyzer );
