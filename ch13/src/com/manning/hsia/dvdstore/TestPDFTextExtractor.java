@@ -44,6 +44,7 @@ public class TestPDFTextExtractor extends SearchTestCase {
 			pdf.setId(1);
 			buildIndex( pdf, session, tx );
 
+			tx = session.beginTransaction();
 			QueryParser parser = new QueryParser( "description", analyzer );
 
 			Query query = parser.parse( "description:salesman" );
