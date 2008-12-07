@@ -24,7 +24,6 @@ public class Pdf {
 	}
 
 	@Id
-//	@GeneratedValue
 	@DocumentId
 	public Integer getId() {
 		return id;
