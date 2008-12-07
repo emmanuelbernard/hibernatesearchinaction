@@ -2,7 +2,7 @@
 <head><title>Chapter 10 - Hibernate Search in Action</title></head>
 <body>
 <h1>Chapter 10 - Hibernate Search in Action</h1>
-<p>This chapter describes how to deploy Hibernate Search in a cluster.</p>
+<p>This chapter describes how to deploy Hibernate Search in a cluster. This has been tested on JBoss AS 5 GA</p>
 
 <h2>Project structure</h2>
 <h3>src</h3>
@@ -14,11 +14,6 @@
 
 <h3>etc</h3>
 <p>contains the WAR <code>web.xml</code> config file. This file declares the servlet we are using.</p>
-
-<h3>serverconfig</h3>
-<p>Represents the whole configuration directory for JBoss AS 5 of both the master node and the slave node.</p>
-<p>You can copy these directories under $JBOSS_HOME/server and run JBoss AS 5 in $JBOSS_HOME/bin using <code>./run.sh -c master</code> or <code>./run.sh -c slave</code></p>
-<p>JBoss AS 5 is available at <a href="http://www.jboss.org/jbossas/">jboss.org</a>
 
 <h3>Dependencies</h3>
 <p>You can find the libraries necessary to compile and run the tests in ../common/lib. You also need to add the libraries found in ./lib</p>
@@ -34,7 +29,54 @@ Use the following ant targets:</p>
  </dl>
 <p>You need to update <code>build.properties</code> and adjust <code>jboss.slave.deploy</code> and <code>jboss.master.deploy</code> to point to the deploy directory you wish to deploy the projects on.</p>
 
+<h3>Preparing the servers</h3>
+<p>A few steps are necessary to prepare JBoss AS 5</p>
+<p>Download JBoss AS 5 (tested with the GA version) at <a href="http://www.jboss.org/jbossas/">jboss.org</a></p>
+<p>On $JBOSS_HOME/server, duplicate the default configuration to simulate a master and a slave<br/><pre>cd $JBOSS_HOME/server ; cp -R default master ; cp -R default slave</pre></p>
+<p>Add a queue on the master. Open master/deploy/messaging/destinations-service.xml and add the following XML fragment.<br/>
+<pre>&lt;server&gt;
+   &lt;!--
+      The Hibernate Search publication Queue.
+   --&gt;
+   
+   &lt;mbean code="org.jboss.jms.server.destination.QueueService"
+      name="jboss.messaging.destination:service=Queue,name=hibernatesearch"
+      xmbean-dd="xmdesc/Queue-xmbean.xml"&gt;
+      &lt;depends optional-attribute-name="ServerPeer"&gt;jboss.messaging:service=ServerPeer&lt;/depends&gt;
+      &lt;depends&gt;jboss.messaging:service=PostOffice&lt;/depends&gt;
+   &lt;/mbean&gt;
+   ...
+&lt;/server&gt;
+</pre>
+</p>
+<p>On the ch10 project, update <code>build.properties</code> and adjust <code>jboss.slave.deploy</code> and <code>jboss.master.deploy</code> to point to the deploy directory you wish to deploy the projects on.
+<pre>jboss.slave.deploy=/Applications/jboss-5.0.0.GA/server/slave/deploy
+jboss.master.deploy=/Applications/jboss-5.0.0.GA/server/master/deploy</pre>
+<br/>
+Then run <code>ant clean compile package redeploy</code>
+</p>
+
+
 <h3>Running the demo</h3>
-To create a new Item and test the index work being sent through JMS, point the browser to /dvdstore-slave/item on the JBoss slave instance.
+<p>Make sure your projects are properly deployed.<br/>
+Start the master instance. In $JBOSS_HOME/bin
+<pre>./run.sh -c master -Djboss.service.binding.set=ports-01 -Djboss.messaging.ServerPeerID=1
+</pre>
+<code>-Djboss.service.binding.set=ports-01</code> is necessary to avoid port conflicts between the two instances. All ports are increased by 100. For example the http port is 8180. Likewise, 
+<code>-Djboss.messaging.ServerPeerID=1</code> makes sure that the messaging server id is different between the slave and the master.<br/>
+Make sure the master is properly deployed before starting the slave. The master needs to properly initialize the shared index before a slave can connect. <br/>
+To start the slave, run in $JBOSS_HOME/bin
+<pre>./run.sh -c slave
+</pre>
+</p>
+
+<p>
+To create a new Item and test the index work being sent through JMS, point the browser to <code>http://localhost:8080/dvdstore-slave/item</code> (the JBoss slave instance).<br/>
+Check the index on the master side at <code>$JBOSS_HOME/server/master/data/indexes/com.manning.hsia.dvdstore.model.Item</code>, for example by using Luke.<br/>
+The number of document will increase for each call to the URL. Make sure to re-open your index in Luke to see the number of documents changing. 
+<br/>
+You can also check the index on the slave side. Remember that changes take 20s (twice 10 seconds) to propagate from the master. The slave index is available at <code>$JBOSS_HOME/server/slave/data/indexes/com.manning.hsia.dvdstore.model.Item</code>. Remember that a slave keeps two versions of the index, an active and a passive. The active version is the one described by the <code>currentN</code> file.<br/>The intermediate copy between master and slaves is held in <code>$JBOSS_HOME/server/shared/data/indexes/com.manning.hsia.dvdstore.model.Item</code>.
+</p>
+
 </body>
 </html>

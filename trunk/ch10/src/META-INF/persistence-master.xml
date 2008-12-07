@@ -15,11 +15,14 @@
     		<property name="hibernate.connection.pool_size" value="1"/>		
 			
 			<!-- Hibernate Search configuration -->
-    		<property name="hibernate.search.default.directory_provider"
-    					value="org.hibernate.search.store.FSDirectoryProvider"/>
-    		<!--  property name="hibernate.search.default.indexBase" value="/Applications/jboss-5.0.0.CR1.master/server/default/data/indexes"/ -->
-    		<property name="hibernate.search.default.indexBase" value="../server/default/data/indexes"/>
-    		<property name="hibernate.search.default.refresh" value="1800"/>
+            <!-- DirectoryProvider configuration -->
+            <property name="hibernate.search.default.directory_provider"
+                      value="org.hibernate.search.store.FSMasterDirectoryProvider"/>
+            <property name="hibernate.search.default.refresh" value="10"/>
+            <property name="hibernate.search.default.indexBase"
+                      value="../server/master/data/indexes"/>
+            <property name="hibernate.search.default.sourceBase"
+                      value="../server/shared/data/indexes"/>
     		
     	</properties>
 	</persistence-unit>

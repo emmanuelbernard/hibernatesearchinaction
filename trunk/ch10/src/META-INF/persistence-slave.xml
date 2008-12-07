@@ -12,12 +12,18 @@
 			<property name="hibernate.hbm2ddl.auto" value="create-drop"/>
     		
 			<!-- Hibernate Search configuration -->
-    		<property name="hibernate.search.default.directory_provider"
-    					value="org.hibernate.search.store.FSDirectoryProvider"/> <!-- slave directory provider -->
-    		<property name="hibernate.search.default.indexBase" value="../server/default/data/indexes"/> 
-    		<property name="hibernate.search.default.refresh" value="1800"/>
     		
-    		<!--  JMS backend -->
+            <!-- DirectoryProvider configuration -->
+            <property name="hibernate.search.default.directory_provider"
+                      value="org.hibernate.search.store.FSSlaveDirectoryProvider"/>
+            <property name="hibernate.search.default.refresh" value="10"/>
+            <property name="hibernate.search.default.indexBase"
+                      value="../server/slave/data/indexes"/>
+            <property name="hibernate.search.default.sourceBase"
+                      value="../server/shared/data/indexes"/>
+
+
+            <!--  JMS backend -->
     		<property name="hibernate.search.worker.jndi.url" value="jnp://localhost:1199"/> <!-- JNDI URL the queue is looked up from -->
     		<property name="hibernate.search.worker.backend" value="jms"/>  <!-- Use the JMS back end -->
     		<property name="hibernate.search.worker.jms.connection_factory" value="/ConnectionFactory"/> <!-- Connection factory JNDI name -->
