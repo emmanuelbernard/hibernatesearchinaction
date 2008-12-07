@@ -2,13 +2,6 @@
 <project relativePaths="true" version="4">
   <component name="AntConfiguration">
     <defaultAnt bundledAnt="true" />
-    <buildFile url="file://$PROJECT_DIR$/ch13/build.xml">
-      <additionalClassPath />
-      <antReference projectDefault="true" />
-      <customJdkName value="" />
-      <maximumHeapSize value="128" />
-      <properties />
-    </buildFile>
   </component>
   <component name="BuildJarProjectSettings">
     <option name="BUILD_JARS_ON_MAKE" value="false" />
@@ -516,6 +509,9 @@
     <option name="myTilesValidationEnabled" value="true" />
     <option name="myValidatorValidationEnabled" value="true" />
     <option name="myReportErrorsAsWarnings" value="true" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myVersion" value="123" />
   </component>
   <component name="SvnChangesBrowserSettings">
     <option name="USE_AUTHOR_FIELD" value="true" />
