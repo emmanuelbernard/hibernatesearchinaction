@@ -1,0 +1,6 @@
+Hibernate Search in Action source code
+======================================
+
+1.0.0 (7-12-2008)
+-----------------
+Initial release
