@@ -7,7 +7,7 @@ import org.apache.lucene.search.Query;
 import org.testng.annotations.Test;
 
 public class TestQueryParserQueryGeneration {
-	@Test
+	@Test(groups="ch07")
 	public void testQueryParser() throws Exception {
 
 		String queryString = "The Story of the Day";

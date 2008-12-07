@@ -14,7 +14,7 @@ import java.io.Reader;
 import java.io.StringReader;
 
 public class TestManualAnalyzer {
-	@Test
+	@Test(groups="ch07")
 	public void testManualAnalyzer() throws Exception {
 		String search = "The Little Pony";
 		Reader reader = new StringReader( search );

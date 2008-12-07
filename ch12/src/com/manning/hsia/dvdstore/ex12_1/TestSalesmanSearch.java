@@ -19,7 +19,7 @@ import com.manning.hsia.test.Product;
 
 public class TestSalesmanSearch extends SearchTestCase {
 
-	@Test
+	@Test(groups="ch12")
 	public void searchProduct() throws Exception {
 		FullTextSession session = Search.getFullTextSession(openSession());
 		Transaction tx = session.beginTransaction();
@@ -62,7 +62,7 @@ public class TestSalesmanSearch extends SearchTestCase {
 		};
 	}
 
-	@BeforeClass
+	@BeforeClass(groups="ch12", alwaysRun=true)
 	protected void setUp() throws Exception {
 		File sub = locateBaseDir();
 		File[] files = sub.listFiles();

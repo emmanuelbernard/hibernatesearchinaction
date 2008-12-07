@@ -21,7 +21,7 @@ import java.util.List;
 public class TestPdfToDoc extends SearchTestCase {
 	private Analyzer analyzer = new StandardAnalyzer();
 
-	@Test
+	@Test(groups="ch13")
 	public void testPdfToDoc() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();

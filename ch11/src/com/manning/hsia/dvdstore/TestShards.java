@@ -21,7 +21,7 @@ import java.util.List;
 public class TestShards extends SearchTestCase {
 	Transaction tx;
 
-	@Test
+	@Test(groups="ch11", alwaysRun=true)
 	public void testShards() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		buildIndex( session );
@@ -80,7 +80,7 @@ public class TestShards extends SearchTestCase {
 		session.clear();
 	}
 
-	@BeforeClass
+	@BeforeClass(groups="ch11", alwaysRun=true)
 	protected void setUp() throws Exception {
 		File sub = locateBaseDir();
 		File[] files = sub.listFiles();

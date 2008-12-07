@@ -14,7 +14,7 @@ public class TestPrefixQuery extends SearchTestCase {
 	String[] titles = new String[]{"Sleepless in Seattle", "Moonlighting - Seasons 1 & 2", "Song of the Sea",
 		"he's not a computer salesman", "Friends - The Complete Tenth Season"};
 
-	@Test
+	@Test(groups="ch07")
 	public void testPrefixQuery() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();

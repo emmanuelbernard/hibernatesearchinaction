@@ -22,7 +22,7 @@ public class NonShardsTest extends SearchTestCase {
 	Transaction tx;
 	private Logger mLogger = Logger.getLogger( NonShardsTest.class.getName());
 
-	@Test
+	@Test(groups="ch11")
 	public void testNoShards() throws Exception {
 		FullTextSession session = Search.getFullTextSession(openSession());
 		buildIndex(session);
@@ -74,7 +74,7 @@ public class NonShardsTest extends SearchTestCase {
 		session.clear();
 	}
 
-	@BeforeClass
+	@BeforeClass(groups="ch11", alwaysRun=true)
 	protected void setUp() throws Exception {
 		File sub = locateBaseDir();
 		File[] files = sub.listFiles();

@@ -15,7 +15,7 @@ public class TestTermQuery extends SearchTestCase {
 		"a traveling salesman touting the wave of the future", "transforms into an aggressive, high-risk salesman",
 		"a once-successful salesman"};
 
-	@Test
+	@Test(groups="ch07")
 	public void testTermQuery() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();

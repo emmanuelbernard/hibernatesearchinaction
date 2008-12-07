@@ -16,7 +16,7 @@ public class TestPhraseQuery extends SearchTestCase {
 		"the fifth season of star trek", "to Star Trek fans everywhere the stellar second season",
 		"a once-successful salesman"};
 
-	@Test
+	@Test(groups="ch07")
 	public void testPhraseQuery() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();

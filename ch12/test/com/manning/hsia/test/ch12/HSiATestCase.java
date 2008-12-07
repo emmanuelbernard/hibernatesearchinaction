@@ -46,7 +46,7 @@ public abstract class HSiATestCase {
 		}
 	}
 
-	@BeforeClass
+	@BeforeClass(groups="ch12", alwaysRun=true)
 	protected void setUp() throws Exception {
 		if ( getSessions() == null || getSessions().isClosed() || lastTestClass != getClass() ) {
 			buildSessionFactory( getMappings(), getAnnotatedPackages(), getXmlFiles() );

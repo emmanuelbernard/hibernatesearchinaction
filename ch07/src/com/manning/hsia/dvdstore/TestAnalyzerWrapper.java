@@ -21,7 +21,7 @@ import java.util.List;
 
 public class TestAnalyzerWrapper extends SearchTestCase {
 
-	@Test
+	@Test(groups="ch07")
 	public void testScopedAnalyzer() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();

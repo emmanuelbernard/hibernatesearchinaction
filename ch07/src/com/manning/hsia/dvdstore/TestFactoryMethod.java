@@ -16,7 +16,7 @@ public class TestFactoryMethod extends SearchTestCase {
 		"Toy Story 2", "Ever After - A Cinderella Story", "Dodgeball - A True Underdog Story",
 		"The Miracle Maker - The Story of Jesus"};
 
-	@Test
+	@Test(groups="ch07")
 	public void testFactoryMethod() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();

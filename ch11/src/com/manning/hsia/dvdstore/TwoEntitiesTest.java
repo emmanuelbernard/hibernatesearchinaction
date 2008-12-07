@@ -21,7 +21,7 @@ public class TwoEntitiesTest extends SearchTestCase {
 	FullTextSession session;
 	Transaction tx;
 
-	@Test
+	@Test(groups="ch11")
 	public void testTwoEntitiesNoShards() throws Exception {
 		session = Search.getFullTextSession(openSession());
 		buildIndex();
@@ -72,7 +72,7 @@ public class TwoEntitiesTest extends SearchTestCase {
 		session.clear();
 	}
 
-	@BeforeClass
+	@BeforeClass(groups="ch11", alwaysRun=true)
 	protected void setUp() throws Exception {
 		File sub = locateBaseDir();
 		File[] files = sub.listFiles();

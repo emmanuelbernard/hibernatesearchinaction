@@ -16,7 +16,7 @@ import java.util.List;
 public class TestBadRangeQuery extends SearchTestCase {
 	int[] numbers = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-	@Test
+	@Test(groups="ch07")
 	public void testNumericRangeQuery() throws Exception {
 		FullTextSession session = Search.getFullTextSession(openSession());
 		Transaction tx = session.beginTransaction();

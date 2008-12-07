@@ -20,7 +20,7 @@ public class ProjectionQueryTest extends SearchTestCase {
 	FullTextSession session;
 	Transaction tx;
 
-	@Test
+	@Test(groups="ch11")
 	public void testLuceneObjectsProjectionWithScroll() throws Exception {
 		session = Search.getFullTextSession( openSession() );
 		buildIndex();
@@ -86,7 +86,7 @@ public class ProjectionQueryTest extends SearchTestCase {
 		};
 	}
 
-	@BeforeClass
+	@BeforeClass(groups="ch11", alwaysRun=true)
 	protected void setUp() throws Exception {
 		File sub = locateBaseDir();
 		File[] files = sub.listFiles();

@@ -6,21 +6,62 @@
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch04/ch04.iml" afterPath="$PROJECT_DIR$/ch04/ch04.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestMultiField.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestMultiField.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HSiA-DVDStore.ipr" afterPath="$PROJECT_DIR$/HSiA-DVDStore.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch02/ch02.iml" afterPath="$PROJECT_DIR$/ch02/ch02.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestAnalyzerWrapper.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestAnalyzerWrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestTermQuery.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestTermQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch10/ch10.iml" afterPath="$PROJECT_DIR$/ch10/ch10.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch11/src/com/manning/hsia/dvdstore/NonShardsTest.java" afterPath="$PROJECT_DIR$/ch11/src/com/manning/hsia/dvdstore/NonShardsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestManualAnalyzer.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestManualAnalyzer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_9/TestSalesmanSearch.java" afterPath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_9/TestSalesmanSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_1/TestSalesmanSearch.java" afterPath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_1/TestSalesmanSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch11/src/com/manning/hsia/dvdstore/ProjectionQueryTest.java" afterPath="$PROJECT_DIR$/ch11/src/com/manning/hsia/dvdstore/ProjectionQueryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestMSDocToIndex.java" afterPath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestMSDocToIndex.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestStopAnalyzer.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestStopAnalyzer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_15/TestSalesmanSearch.java" afterPath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_15/TestSalesmanSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch09/ch09.iml" afterPath="$PROJECT_DIR$/ch09/ch09.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestPhraseQueryWithSlop.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestPhraseQueryWithSlop.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestPhraseQuery.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestPhraseQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_10/TestSalesmanSearch.java" afterPath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_10/TestSalesmanSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestQueryParserQueryGeneration.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestQueryParserQueryGeneration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestPDFTextExtractor.java" afterPath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestPDFTextExtractor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch11/src/com/manning/hsia/dvdstore/TestShards.java" afterPath="$PROJECT_DIR$/ch11/src/com/manning/hsia/dvdstore/TestShards.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestFuzzyQuery.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestFuzzyQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestHighlighter.java" afterPath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestHighlighter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestFuzzyTermEnum.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestFuzzyTermEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HSiA-DVDStore.iws" afterPath="$PROJECT_DIR$/HSiA-DVDStore.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestGoodRangeQuery.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestGoodRangeQuery.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch12/src/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestSynonyms.java" afterPath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestSynonyms.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestPdfToDoc.java" afterPath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestPdfToDoc.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch03/ch03.iml" afterPath="$PROJECT_DIR$/ch03/ch03.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch06/ch06.iml" afterPath="$PROJECT_DIR$/ch06/ch06.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch11/ch11.iml" afterPath="$PROJECT_DIR$/ch11/ch11.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch10/ch10.iml" afterPath="$PROJECT_DIR$/ch10/ch10.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch08/ch08.iml" afterPath="$PROJECT_DIR$/ch08/ch08.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/changelog.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HSiA-DVDStore.iws" afterPath="$PROJECT_DIR$/HSiA-DVDStore.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.html" afterPath="$PROJECT_DIR$/readme.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch12/ch12.iml" afterPath="$PROJECT_DIR$/ch12/ch12.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch05/ch05.iml" afterPath="$PROJECT_DIR$/ch05/ch05.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestFactoryMethod.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestFactoryMethod.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch11/src/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_14/TestSalesmanSearch.java" afterPath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_14/TestSalesmanSearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch13/src/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestWildcards.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestWildcards.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestBoostingQuery.java" afterPath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestBoostingQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch12/test/com/manning/hsia/test/ch12/HSiATestCase.java" afterPath="$PROJECT_DIR$/ch12/test/com/manning/hsia/test/ch12/HSiATestCase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch13/test/com/manning/hsia/test/ch13/HSiATestCase.java" afterPath="$PROJECT_DIR$/ch13/test/com/manning/hsia/test/ch13/HSiATestCase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch11/test/com/manning/hsia/test/HSiATestCase.java" afterPath="$PROJECT_DIR$/ch11/test/com/manning/hsia/test/HSiATestCase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_4/TestSalesmanSearch.java" afterPath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_4/TestSalesmanSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_6/TestSalesmanSearch.java" afterPath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_6/TestSalesmanSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch11/src/com/manning/hsia/dvdstore/TwoEntitiesTest.java" afterPath="$PROJECT_DIR$/ch11/src/com/manning/hsia/dvdstore/TwoEntitiesTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ch07/src/log4j.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_17/TermPositionsTest.java" afterPath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_17/TermPositionsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch13/ch13.iml" afterPath="$PROJECT_DIR$/ch13/ch13.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/ch07.iml" afterPath="$PROJECT_DIR$/ch07/ch07.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch09/ch09.iml" afterPath="$PROJECT_DIR$/ch09/ch09.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestBadRangeQuery.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestBadRangeQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_19/TestMoreLikeThis.java" afterPath="$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_19/TestMoreLikeThis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch11/src/com/manning/hsia/dvdstore/IndexMergeTest.java" afterPath="$PROJECT_DIR$/ch11/src/com/manning/hsia/dvdstore/IndexMergeTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/test/com/manning/hsia/test/HSiATestCase.java" afterPath="$PROJECT_DIR$/ch07/test/com/manning/hsia/test/HSiATestCase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestReadTextFile.java" afterPath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestReadTextFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestXmlBridges.java" afterPath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestXmlBridges.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestSpellChecker.java" afterPath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestSpellChecker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestPrefixQuery.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestPrefixQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestBooleanQuery.java" afterPath="$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestBooleanQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch08/ch08.iml" afterPath="$PROJECT_DIR$/ch08/ch08.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestRegex.java" afterPath="$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestRegex.java" />
     </list>
     <ignored path="HSiA-DVDStore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +81,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_19/TestMoreLikeThis.java" line="41" class="com.manning.hsia.dvdstore.ex12_19.TestMoreLikeThis" package="com.manning.hsia.dvdstore.ex12_19">
+      <breakpoint url="file://$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestPDFTextExtractor.java" line="33" class="com.manning.hsia.dvdstore.TestPDFTextExtractor" package="com.manning.hsia.dvdstore">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -53,20 +94,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestPDFTextExtractor.java" line="34" class="com.manning.hsia.dvdstore.TestPDFTextExtractor" package="com.manning.hsia.dvdstore">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestReadTextFile.java" line="83" class="com.manning.hsia.dvdstore.TestReadTextFile" package="com.manning.hsia.dvdstore">
+      <breakpoint url="file://$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestReadTextFile.java" line="82" class="com.manning.hsia.dvdstore.TestReadTextFile" package="com.manning.hsia.dvdstore">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -92,7 +120,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestReadTextFile.java" line="22" class="com.manning.hsia.dvdstore.TestReadTextFile" package="com.manning.hsia.dvdstore">
+      <breakpoint url="file://$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestReadTextFile.java" line="21" class="com.manning.hsia.dvdstore.TestReadTextFile" package="com.manning.hsia.dvdstore">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -166,104 +194,7 @@
     <favorites_list name="HSiA-DVDStore" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="readme.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch11/readme.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="HtmlPreview">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchTestCase.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch07/test/com/manning/hsia/test/SearchTestCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="22" selection-start="445" selection-end="445" vertical-scroll-proportion="0.09195402">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HSiATestCase.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch07/test/com/manning/hsia/test/HSiATestCase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="22" selection-start="407" selection-end="407" vertical-scroll-proportion="0.09195402">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestAnalyzerWrapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestAnalyzerWrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="81" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.954023">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch10/etc/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="persistence-master.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch10/src/META-INF/persistence-master.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="45" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.6640316">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="39" selection-start="1942" selection-end="1942" vertical-scroll-proportion="0.5685393">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="HtmlPreview">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="changelog.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/changelog.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="persistence-slave.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch10/src/META-INF/persistence-slave.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="51" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.5217391">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch10/build.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="62" selection-start="0" selection-end="137" vertical-scroll-proportion="0.022988506">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -328,8 +259,8 @@
     </navigator>
   </component>
   <component name="PropertiesComponent">
-    <property name="TEMP_MODULE_EXPLODED_DIR_FOR_ch10/web/Web6" value="/private/tmp/webExplodedDir58624tmp" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="TEMP_MODULE_EXPLODED_DIR_FOR_ch10/web/Web6" value="/private/tmp/webExplodedDir58624tmp" />
     <property name="TEMP_MODULE_EXPLODED_DIR_FOR_ch10/web/Web12" value="/private/tmp/webExplodedDir58630tmp" />
     <property name="TEMP_MODULE_EXPLODED_DIR_FOR_ch10/web/Web" value="/private/tmp/webExplodedDir58574tmp" />
     <property name="MemberChooser.sorted" value="false" />
@@ -343,8 +274,8 @@
     <property name="TEMP_MODULE_EXPLODED_DIR_FOR_ch10/web/Web3" value="/private/tmp/webExplodedDir58625tmp" />
     <property name="TEMP_MODULE_EXPLODED_DIR_FOR_ch10/web/Web8" value="/private/tmp/webExplodedDir58628tmp" />
     <property name="TEMP_MODULE_EXPLODED_DIR_FOR_ch10/web/Web5" value="/private/tmp/webExplodedDir58575tmp" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="TEMP_MODULE_EXPLODED_DIR_FOR_ch10/web/Web11" value="/private/tmp/webExplodedDir58576tmp" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="TEMP_MODULE_EXPLODED_DIR_FOR_ch10/web/Web2" value="/private/tmp/webExplodedDir58627tmp" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
     <property name="TEMP_MODULE_EXPLODED_DIR_FOR_ch10/web/Web9" value="/private/tmp/webExplodedDir58626tmp" />
@@ -375,7 +306,7 @@
   </component>
   <component name="RunManager" selected="TestNG.&lt;default&gt;">
     <tempConfiguration default="false" name="&lt;default&gt;" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
-      <module name="ch11" />
+      <module name="ch13" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -405,6 +336,18 @@
         <option name="Make" value="true" />
       </method>
     </tempConfiguration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="/Applications/dev/IntelliJ IDEA 6.0.4.app/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
@@ -427,28 +370,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <envs />
-      <method>
-        <option name="Make" value="true" />
-      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
       <module name="" />
@@ -479,17 +400,27 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
+    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
       <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="/Applications/dev/IntelliJ IDEA 6.0.4.app/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <envs />
+      <method>
+        <option name="Make" value="true" />
+      </method>
     </configuration>
     <configuration default="false" name="ch02" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
       <module name="ch02" />
@@ -709,14 +640,14 @@
       </method>
     </configuration>
     <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.ch02" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.ch03" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.ch04" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.ch05" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.ch06" />
-      <item index="5" class="java.lang.String" itemvalue="TestNG.ch08" />
-      <item index="6" class="java.lang.String" itemvalue="TestNG.ch09" />
-      <item index="7" class="java.lang.String" itemvalue="TestNG.&lt;default&gt;" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.&lt;default&gt;" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.ch02" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.ch03" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.ch04" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.ch05" />
+      <item index="5" class="java.lang.String" itemvalue="TestNG.ch06" />
+      <item index="6" class="java.lang.String" itemvalue="TestNG.ch08" />
+      <item index="7" class="java.lang.String" itemvalue="TestNG.ch09" />
     </list>
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby test">
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
@@ -785,7 +716,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="22" width="1391" height="878" extended-state="0" />
+    <frame x="48" y="23" width="1391" height="878" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
@@ -801,7 +732,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10991545" order="1" />
       <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="4" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" order="8" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23311259" order="2" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4834437" order="2" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24954128" order="2" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26467332" order="4" />
@@ -822,7 +753,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add changelog file (version) and improve root readme file." />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -855,82 +786,40 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/SimpleHTMLFormatter.java">
+    <entry file="jar://$PROJECT_DIR$/common/lib/hibernate-search.jar!/org/hibernate/search/store/FSSlaveDirectoryProvider.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="157" selection-end="157" vertical-scroll-proportion="0.09195402">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestBoostingQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="17" selection-start="1324" selection-end="1324" vertical-scroll-proportion="0.022988506">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestSynonyms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="0" selection-start="3225" selection-end="3225" vertical-scroll-proportion="1.2586207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestRegex.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="74" selection-start="1537" selection-end="1602" vertical-scroll-proportion="0.022988506">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestSpellChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="16" selection-start="2209" selection-end="2209" vertical-scroll-proportion="0.20114942">
+        <state line="5" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.09467456">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ch11/readme.html">
+      <provider editor-type-id="HtmlPreview">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="HtmlPreview">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ch07/test/com/manning/hsia/test/SearchTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="445" selection-end="445" vertical-scroll-proportion="0.09195402">
+        <state line="14" column="22" selection-start="445" selection-end="445" vertical-scroll-proportion="0.022988506">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ch07/test/com/manning/hsia/test/HSiATestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="22" selection-start="407" selection-end="407" vertical-scroll-proportion="0.09195402">
+        <state line="11" column="22" selection-start="407" selection-end="407" vertical-scroll-proportion="0.022988506">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ch07/src/com/manning/hsia/dvdstore/TestAnalyzerWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="81" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.954023">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch10/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="62" selection-start="0" selection-end="137" vertical-scroll-proportion="0.022988506">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch10/src/META-INF/persistence-slave.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="51" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.5217391">
+        <state line="61" column="81" selection-start="1952" selection-end="1952" vertical-scroll-proportion="0.17816092">
           <folding />
         </state>
       </provider>
@@ -942,33 +831,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/common/lib/hibernate-search.jar!/org/hibernate/search/store/FSSlaveDirectoryProvider.class">
+    <entry file="file://$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestSynonyms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="164" selection-end="164" vertical-scroll-proportion="0.09467456">
+        <state line="64" column="24" selection-start="2328" selection-end="2328" vertical-scroll-proportion="0.47659576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch13/src/com/manning/hsia/dvdstore/TestBoostingQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="13" selection-start="738" selection-end="738" vertical-scroll-proportion="0.017021276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch12/src/com/manning/hsia/dvdstore/ex12_1/TestSalesmanSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="602" selection-end="602" vertical-scroll-proportion="0.017021276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch13/test/com/manning/hsia/ch13/Synonym.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="312" selection-end="312" vertical-scroll-proportion="0.11914894">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch13/test/com/manning/hsia/test/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="343" selection-end="343" vertical-scroll-proportion="0.11914894">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changelog.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="0.08510638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.html">
+      <provider editor-type-id="HtmlPreview">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="39" selection-start="1942" selection-end="1942" vertical-scroll-proportion="0.6687898">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ch10/src/META-INF/persistence-master.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="45" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.6640316">
+        <state line="28" column="45" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.48766327">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.html">
+    <entry file="file://$PROJECT_DIR$/ch10/src/META-INF/persistence-slave.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="39" selection-start="1942" selection-end="1942" vertical-scroll-proportion="0.5685393">
+        <state line="22" column="51" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.38316402">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="HtmlPreview">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/changelog.txt">
+    <entry file="file://$PROJECT_DIR$/ch10/build.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="1" column="62" selection-start="0" selection-end="137" vertical-scroll-proportion="0.017021276">
           <folding />
         </state>
       </provider>

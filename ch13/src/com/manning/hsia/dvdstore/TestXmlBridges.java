@@ -18,7 +18,7 @@ public class TestXmlBridges extends SearchTestCase {
 	private Query query;
 	private Analyzer analyzer = new StandardAnalyzer();
 
-	@Test
+	@Test(groups="ch13")
 	public void testSaxXmlBridge() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();
@@ -47,7 +47,7 @@ public class TestXmlBridges extends SearchTestCase {
 		}
 	}
 
-	@Test
+	@Test(groups="ch13")
 	public void testDOMXmlBridge() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();

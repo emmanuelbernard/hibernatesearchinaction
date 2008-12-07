@@ -264,15 +264,6 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../common/lib/xerces.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://$MODULE_DIR$/../common/lib/PDFBox-0.7.4-dev-20080120.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -346,6 +337,15 @@
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../common/lib/jakarta-regexp-1.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/lib/xerces.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

@@ -22,7 +22,7 @@ import java.util.List;
 public class TestBoostingQuery extends SearchTestCase {
 	public Searcher searcher;
 
-	@Test
+	@Test(groups="ch13")
 	public void testBoostingQuery() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();
@@ -64,7 +64,7 @@ public class TestBoostingQuery extends SearchTestCase {
 		return new IndexSearcher( reader );
 	}
 
-	@BeforeClass
+	@BeforeClass(groups="ch13", alwaysRun=true)
 	protected void setUp() throws Exception {
 		File sub = locateBaseDir();
 		File[] files = sub.listFiles();

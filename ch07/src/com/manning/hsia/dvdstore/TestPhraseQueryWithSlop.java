@@ -16,7 +16,7 @@ public class TestPhraseQueryWithSlop extends SearchTestCase {
 		"the fifth season of star trek", "to Star Trek fans everywhere the stellar second season",
 		"a once-successful salesman"};
 
-	@Test
+	@Test(groups="ch07")
 	public void testSloppyPhraseQuery() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 		Transaction tx = session.beginTransaction();

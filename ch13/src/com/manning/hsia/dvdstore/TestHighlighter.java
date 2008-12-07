@@ -31,7 +31,7 @@ public class TestHighlighter extends SearchTestCase {
 		"Jamie Lee Curtis) finds out that he's not really a salesman and Bill Paxton is a used-car salesman."
 	};
 
-	@Test
+	@Test(groups="ch13")
 	public void testSimpleHighLighter() throws Exception {
 		FullTextSession session = Search.getFullTextSession( openSession() );
 
