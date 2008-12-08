@@ -7,9 +7,8 @@
 <p>The dvd_index directory is the working directory for the majority of examples that do not use a RAMDirectory. This means tests which build their own index will build it in this directory. Since they clean up after themselves, files will be deleted from this directory.</p>
 <p>dvd_index_backup holds copies of the dvd_index for copying to the dvd_index directory when running test concerning it. This is taken care of by the tests themselves.</p>
 <p>Quite a few of the tests run in a RAM directory so they will not be available to Luke should you want to examine them. This is easily remedied by placing a configuration method in the appropriate test and specifying the FSDirectoryProvider. Also if there is already a configuration present just change the directory type.</p>
-<p>The win_s.pl file located in base directory is the synonym building file from WordNet.com. You will need this file if you wish to build the synonym index from scratch.
-The synonym index is already built for you and located in the <code>synonym_index</code> directory. <code>TestSynonyms</code> contains the code to automatically build the index but it is commented. If you wish to build it, read the instructions in the test on what needs to be un-commented. 
-</p>
+<p>In order to run <code>TestSynonyms</code>, you must download <code>WNprolog-3.0.tar.gz</code> (the prolog version of WordNet) that you can find at <a href="http://wordnet.princeton.edu/">http://wordnet.princeton.edu/</a>. In the tar, find the file named <code>wn_s.pl</code> and copy it over to the root directory of these examples (one directory up this file). The <code>wn_s.pl</code> file is the synonym building file from WordNet. You will also need this file if you wish to build the synonym index from scratch.
+The synonym index will be automatically built by <code>TestSynonyms</code> and placed in the <code>synonym_index</code> directory.</p>
 
 
 <h2>Project structure</h2>
