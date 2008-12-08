@@ -9,6 +9,7 @@ import org.apache.lucene.search.BooleanQuery;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.TermQuery;
 import org.hibernate.Transaction;
+import org.hibernate.LockMode;
 import org.hibernate.search.FullTextSession;
 
 import java.io.*;
@@ -73,6 +74,19 @@ public class SynonymHelper {
 	}
 
 	public void buildSynonymIndex(FullTextSession session, String synFile) throws IOException {
+		//if index already there, don't do anything
+		final File indexDirectory = new File( "synonym_index", Synonym.class.getName() );
+		if ( indexDirectory.exists() && indexDirectory.listFiles().length > 2 ) return;
+
+
+
+		//prolog file must be there
+		if ( ! ( new File(synFile).exists() ) ) {
+			throw new IllegalStateException("Place " + synFile + " in the root directory (see ch13/readme.html file)");
+		}
+
+
+
 		this.session = session;
 		if (!(new File(synFile)).canRead()) {
 			throw new IOException("Prolog file is not readable: " + synFile);
@@ -143,16 +157,17 @@ public class SynonymHelper {
 				counter++;
 				String word2GroupsKey = (String) iter.next();
 				Synonym syn = new Synonym();
+				syn.setId( counter );
 
 				int n = index(word2Groups, group2Words, word2GroupsKey, syn);
 				if (n > 0) {
 					syn.setWord(word2GroupsKey);
-					session.save(syn);
+					session.lock( syn, LockMode.NONE );
+					session.index(syn);
 				}
 				if (counter % 1000 == 0) { // 100 at a time
-					tx.commit();
+					session.flushToIndexes();
 					session.clear();
-					tx = session.beginTransaction();
 				}
 			}
 			tx.commit();

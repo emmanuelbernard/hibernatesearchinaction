@@ -6,6 +6,7 @@ import org.hibernate.search.annotations.*;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Column;
 
 @Entity
 @Indexed
@@ -16,6 +17,7 @@ public class Synonym {
 	private int id;
 
 	@Field(store = Store.YES, index = Index.UN_TOKENIZED)
+	@Column(length = 1000)
 	public String getSyn() {
 		return syn;
 	}
@@ -35,7 +37,7 @@ public class Synonym {
 
 	@Id
 	@DocumentId
-	@GeneratedValue
+	//@GeneratedValue
 	public int getId() {
 		return id;
 	}
