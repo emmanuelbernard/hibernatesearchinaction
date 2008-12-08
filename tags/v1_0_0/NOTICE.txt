@@ -1,2 +1,0 @@
-Copyright 2008 Emmanuel Bernard, John Griffin and Sanne Grinovero
-http://book.emmanuelbernard.com/hsia
