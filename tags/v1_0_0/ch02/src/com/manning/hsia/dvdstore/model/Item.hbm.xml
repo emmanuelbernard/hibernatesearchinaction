@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!--  Example 2.7 -->
+<hibernate-mapping package="com.manning.hsia.dvdstore.model">
+    <class name="Item">  <!-- mapping externalized in hbm.xml files -->
+    	<id name="id">
+    		<generator class="native"/>
+    	</id>
+    	<property name="title"/>
+    	<property name="description"/>
+    	<property name="ean"/>
+    	<property name="imageURL"/>
+	</class>
+</hibernate-mapping>
