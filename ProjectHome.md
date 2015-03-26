@@ -1,0 +1,1 @@
+All the code examples from the book Hibernate Search in Action  from Emmanuel Bernard and John Griffin published by Manning are available here.
